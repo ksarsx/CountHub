@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.StackPane?>
@@ -31,9 +33,27 @@
                      <children>
                         <HBox HBox.Hgrow="ALWAYS">
                            <children>
-                              <StackPane fx:id="btnHide" prefHeight="24.0" HBox.Hgrow="ALWAYS" />
-                              <StackPane fx:id="btnFull" prefHeight="24.0" HBox.Hgrow="ALWAYS" />
-                              <StackPane fx:id="btnClose" prefHeight="24.0" HBox.Hgrow="ALWAYS" />
+                              <StackPane fx:id="btnHide" HBox.Hgrow="ALWAYS">
+                                 <children>
+                                    <ImageView fitHeight="10.0" fitWidth="10.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@hide.png" />
+                                       </image></ImageView>
+                                 </children></StackPane>
+                              <StackPane fx:id="btnFull" HBox.Hgrow="ALWAYS">
+                                 <children>
+                                    <ImageView fitHeight="10.0" fitWidth="10.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@full.png" />
+                                       </image></ImageView>
+                                 </children></StackPane>
+                              <StackPane fx:id="btnClose" HBox.Hgrow="ALWAYS">
+                                 <children>
+                                    <ImageView fitHeight="10.0" fitWidth="10.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@close.png" />
+                                       </image></ImageView>
+                                 </children></StackPane>
                            </children>
                         </HBox>
                         <Pane fx:id="border6" prefWidth="1.0" />
