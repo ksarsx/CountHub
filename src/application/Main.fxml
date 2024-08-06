@@ -4,22 +4,48 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 
-
 <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <HBox prefHeight="25.0" prefWidth="600.0">
          <children>
-            <VBox prefHeight="25.0" prefWidth="491.0">
+            <Pane prefWidth="5.0" />
+            <VBox HBox.hgrow="ALWAYS">
                <children>
-                  <Pane prefHeight="4.0" prefWidth="491.0" />
+                  <HBox prefHeight="5.0">
+                     <children>
+                        <Pane prefHeight="5.0" prefWidth="10.0" />
+                        <Pane fx:id="border1" prefHeight="5.0" HBox.hgrow="ALWAYS" />
+                     </children>
+                  </HBox>
+                  <Pane fx:id="titleBar" VBox.Vgrow="ALWAYS" />
                </children>
             </VBox>
-            <VBox prefHeight="200.0" prefWidth="100.0">
+            <VBox prefHeight="25.0" prefWidth="100.0">
                <children>
-                  <HBox prefHeight="100.0" prefWidth="200.0" />
+                  <Pane fx:id="border2" prefHeight="1.0" />
+                  <HBox VBox.Vgrow="ALWAYS">
+                     <children>
+                        <Pane fx:id="btnHide" prefHeight="200.0" prefWidth="200.0" />
+                        <Pane fx:id="btnFull" prefHeight="200.0" prefWidth="200.0" />
+                        <Pane fx:id="btnClose" prefHeight="200.0" prefWidth="200.0" />
+                        <Pane prefWidth="1.0" />
+                     </children></HBox>
                </children>
             </VBox>
          </children>
       </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0" VBox.Vgrow="ALWAYS">
+         <children>
+            <Pane prefWidth="5.0" />
+            <VBox HBox.Hgrow="ALWAYS" />
+            <Pane prefWidth="5.0" />
+         </children>
+      </HBox>
+      <HBox prefHeight="5.0">
+         <children>
+            <Pane prefHeight="5.0" prefWidth="10.0" />
+            <Pane HBox.Hgrow="ALWAYS" />
+            <Pane prefHeight="5.0" prefWidth="10.0" />
+         </children></HBox>
    </children>
 </VBox>
