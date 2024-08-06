@@ -2,22 +2,26 @@
 
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 
 <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <HBox prefHeight="25.0" prefWidth="600.0">
          <children>
-            <Pane prefWidth="5.0" />
             <VBox HBox.hgrow="ALWAYS">
                <children>
                   <HBox prefHeight="5.0">
                      <children>
-                        <Pane prefHeight="5.0" prefWidth="10.0" />
+                        <Pane fx:id="border3" prefHeight="5.0" prefWidth="10.0" />
                         <Pane fx:id="border1" prefHeight="5.0" HBox.hgrow="ALWAYS" />
                      </children>
                   </HBox>
-                  <Pane fx:id="titleBar" VBox.Vgrow="ALWAYS" />
+                  <HBox VBox.Vgrow="ALWAYS">
+                     <children>
+                        <Pane fx:id="border4" prefWidth="5.0" />
+                        <Pane fx:id="border5" HBox.Hgrow="ALWAYS" />
+                     </children></HBox>
                </children>
             </VBox>
             <VBox prefHeight="25.0" prefWidth="100.0">
@@ -25,10 +29,14 @@
                   <Pane fx:id="border2" prefHeight="1.0" />
                   <HBox VBox.Vgrow="ALWAYS">
                      <children>
-                        <Pane fx:id="btnHide" prefHeight="200.0" prefWidth="200.0" />
-                        <Pane fx:id="btnFull" prefHeight="200.0" prefWidth="200.0" />
-                        <Pane fx:id="btnClose" prefHeight="200.0" prefWidth="200.0" />
-                        <Pane prefWidth="1.0" />
+                        <HBox HBox.Hgrow="ALWAYS">
+                           <children>
+                              <StackPane fx:id="btnHide" prefHeight="24.0" HBox.Hgrow="ALWAYS" />
+                              <StackPane fx:id="btnFull" prefHeight="24.0" HBox.Hgrow="ALWAYS" />
+                              <StackPane fx:id="btnClose" prefHeight="24.0" HBox.Hgrow="ALWAYS" />
+                           </children>
+                        </HBox>
+                        <Pane fx:id="border6" prefWidth="1.0" />
                      </children></HBox>
                </children>
             </VBox>
@@ -36,16 +44,16 @@
       </HBox>
       <HBox prefHeight="100.0" prefWidth="200.0" VBox.Vgrow="ALWAYS">
          <children>
-            <Pane prefWidth="5.0" />
+            <Pane fx:id="border7" prefWidth="5.0" />
             <VBox HBox.Hgrow="ALWAYS" />
-            <Pane prefWidth="5.0" />
+            <Pane fx:id="border8" prefWidth="5.0" />
          </children>
       </HBox>
       <HBox prefHeight="5.0">
          <children>
-            <Pane prefHeight="5.0" prefWidth="10.0" />
-            <Pane HBox.Hgrow="ALWAYS" />
-            <Pane prefHeight="5.0" prefWidth="10.0" />
+            <Pane fx:id="border9" prefHeight="5.0" prefWidth="10.0" />
+            <Pane fx:id="border10" HBox.Hgrow="ALWAYS" />
+            <Pane fx:id="border11" prefHeight="5.0" prefWidth="10.0" />
          </children></HBox>
    </children>
 </VBox>
