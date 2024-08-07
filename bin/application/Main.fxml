@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
    <children>
       <HBox prefHeight="25.0" prefWidth="600.0">
          <children>
@@ -28,12 +28,17 @@
             </VBox>
             <VBox prefHeight="25.0" prefWidth="100.0">
                <children>
-                  <Pane fx:id="border2" prefHeight="1.0" />
+                  <HBox prefHeight="1.0">
+                     <children>
+                        <Pane fx:id="border2" prefHeight="1.0" HBox.Hgrow="ALWAYS" />
+                        <Pane fx:id="border12" prefHeight="1.0" prefWidth="10.0" />
+                     </children>
+                  </HBox>
                   <HBox VBox.Vgrow="ALWAYS">
                      <children>
                         <HBox HBox.Hgrow="ALWAYS">
                            <children>
-                              <StackPane fx:id="btnHide" HBox.Hgrow="ALWAYS">
+                              <StackPane fx:id="btnHide" onMouseReleased="#btnHideReleased" HBox.Hgrow="ALWAYS">
                                  <children>
                                     <ImageView fitHeight="10.0" fitWidth="10.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
@@ -42,12 +47,12 @@
                                  </children></StackPane>
                               <StackPane fx:id="btnFull" HBox.Hgrow="ALWAYS">
                                  <children>
-                                    <ImageView fitHeight="10.0" fitWidth="10.0" pickOnBounds="true" preserveRatio="true">
+                                    <ImageView fitHeight="10.0" fitWidth="10.0" onMouseReleased="#btnFullScreenReleased" pickOnBounds="true" preserveRatio="true">
                                        <image>
                                           <Image url="@full.png" />
                                        </image></ImageView>
                                  </children></StackPane>
-                              <StackPane fx:id="btnClose" HBox.Hgrow="ALWAYS">
+                              <StackPane fx:id="btnClose" onMouseReleased="#btnCloseReleased" HBox.Hgrow="ALWAYS">
                                  <children>
                                     <ImageView fitHeight="10.0" fitWidth="10.0" pickOnBounds="true" preserveRatio="true">
                                        <image>

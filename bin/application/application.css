@@ -33,3 +33,63 @@
 #border11 {
 	-fx-background-color: #b39f7a;
 }
+#border12 {
+	-fx-background-color: #b39f7a;
+}
+#border1:hover {
+	-fx-background-color: #b39f7a;
+	-fx-cursor: n-resize;
+}
+#border2:hover {
+	-fx-background-color: #b39f7a;
+	-fx-cursor: n-resize;
+}
+#border3:hover {
+	-fx-background-color: #b39f7a;
+	-fx-cursor: nw-resize;
+}
+#border4:hover {
+	-fx-background-color: #b39f7a;
+	-fx-cursor: w-resize;
+}
+#border5:hover {
+	-fx-background-color: #b39f7a;
+	
+}
+#border6:hover {
+	-fx-background-color: #b39f7a;
+	-fx-cursor: e-resize;
+}
+#border7:hover {
+	-fx-background-color: #b39f7a;
+	-fx-cursor: w-resize;
+}
+#border8:hover {
+	-fx-background-color: #b39f7a;
+	-fx-cursor: e-resize;
+}
+#border9:hover {
+	-fx-background-color: #b39f7a;
+	-fx-cursor: sw-resize;
+}
+#border10:hover {
+	-fx-background-color: #b39f7a;
+	-fx-cursor: s-resize;
+}
+#border11:hover {
+	-fx-background-color: #b39f7a;
+	-fx-cursor: se-resize;
+}
+#border12:hover {
+	-fx-background-color: #b39f7a;
+	-fx-cursor: ne-resize;
+}
+#btnClose:hover {
+	-fx-background-color: red;
+}
+#btnFull:hover {
+	-fx-background-color: lightgrey;
+}
+#btnHide:hover {
+	-fx-background-color: lightgrey;
+}
