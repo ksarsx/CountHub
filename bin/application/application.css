@@ -1,95 +1,100 @@
 /* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
 
 #border1 {
-	-fx-background-color: #b39f7a;
+	-fx-background-color: #776544;
 }
 #border2 {
-	-fx-background-color: #b39f7a;
+	-fx-background-color: #776544;
 }
 #border3 {
-	-fx-background-color: #b39f7a;
+	-fx-background-color: #776544;
 }
 #border4 {
-	-fx-background-color: #b39f7a;
+	-fx-background-color: #776544;
 }
 #border5 {
-	-fx-background-color: #b39f7a;
+	-fx-background-color: #776544;
 }
 #border6 {
-	-fx-background-color: #b39f7a;
+	-fx-background-color: #776544;
 }
 #border7 {
-	-fx-background-color: #b39f7a;
+	-fx-background-color: #776544;
 }
 #border8 {
-	-fx-background-color: #b39f7a;
+	-fx-background-color: #776544;
 }
 #border9 {
-	-fx-background-color: #b39f7a;
+	-fx-background-color: #776544;
 }
 #border10 {
-	-fx-background-color: #b39f7a;
+	-fx-background-color: #776544;
 }
 #border11 {
-	-fx-background-color: #b39f7a;
+	-fx-background-color: #776544;
 }
 #border12 {
-	-fx-background-color: #b39f7a;
+	-fx-background-color: #776544;
 }
 #border1:hover {
-	-fx-background-color: #b39f7a;
+	
 	-fx-cursor: n-resize;
 }
 #border2:hover {
-	-fx-background-color: #b39f7a;
+	
 	-fx-cursor: n-resize;
 }
 #border3:hover {
-	-fx-background-color: #b39f7a;
+	
 	-fx-cursor: nw-resize;
 }
 #border4:hover {
-	-fx-background-color: #b39f7a;
+	
 	-fx-cursor: w-resize;
 }
-#border5:hover {
-	-fx-background-color: #b39f7a;
-	
-}
 #border6:hover {
-	-fx-background-color: #b39f7a;
+	
 	-fx-cursor: e-resize;
 }
 #border7:hover {
-	-fx-background-color: #b39f7a;
+	
 	-fx-cursor: w-resize;
 }
 #border8:hover {
-	-fx-background-color: #b39f7a;
+	
 	-fx-cursor: e-resize;
 }
 #border9:hover {
-	-fx-background-color: #b39f7a;
+	
 	-fx-cursor: sw-resize;
 }
 #border10:hover {
-	-fx-background-color: #b39f7a;
+	
 	-fx-cursor: s-resize;
 }
 #border11:hover {
-	-fx-background-color: #b39f7a;
+	
 	-fx-cursor: se-resize;
 }
 #border12:hover {
-	-fx-background-color: #b39f7a;
+	
 	-fx-cursor: ne-resize;
+}
+#btnClose{
+	-fx-background-color: #776544;
+}
+#btnFull{
+	-fx-background-color: #776544;
+}
+#btnHide{
+	-fx-background-color: #776544;
 }
 #btnClose:hover {
 	-fx-background-color: red;
 }
 #btnFull:hover {
-	-fx-background-color: lightgrey;
+	-fx-background-color: #b39f7a;
 }
 #btnHide:hover {
-	-fx-background-color: lightgrey;
+	-fx-background-color: #b39f7a;
 }

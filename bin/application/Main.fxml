@@ -45,9 +45,9 @@
                                           <Image url="@hide.png" />
                                        </image></ImageView>
                                  </children></StackPane>
-                              <StackPane fx:id="btnFull" HBox.Hgrow="ALWAYS">
+                              <StackPane fx:id="btnFull" onMouseReleased="#btnFullScreenReleased" HBox.Hgrow="ALWAYS">
                                  <children>
-                                    <ImageView fitHeight="10.0" fitWidth="10.0" onMouseReleased="#btnFullScreenReleased" pickOnBounds="true" preserveRatio="true">
+                                    <ImageView fitHeight="10.0" fitWidth="10.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
                                           <Image url="@full.png" />
                                        </image></ImageView>
