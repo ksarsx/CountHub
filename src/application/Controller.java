@@ -1,5 +1,9 @@
 package application;
 
+
+
+import java.awt.GraphicsEnvironment;
+
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.Node;
@@ -23,14 +27,44 @@ public class Controller {
 		stage.close();
 	}
 	
+	private double lastHeight = 400;
+	private double lastWidth = 600;
+	private double lastX = 0;
+	private double lastY = 0;
+	
 	@FXML
 	private void btnFullScreenReleased(MouseEvent event) {
-		System.out.println("````");
+		Node source = (Node) event.getSource();
+		Stage stage = (Stage) source.getScene().getWindow();
+		
+		System.out.println(stage.getWidth() + " " + stage.getHeight());
+		double x = GraphicsEnvironment.getLocalGraphicsEnvironment().getMaximumWindowBounds().getMaxX();
+		double y = GraphicsEnvironment.getLocalGraphicsEnvironment().getMaximumWindowBounds().getMaxY();
+		System.out.println(x + " " + y);
+		
+		if ((stage.getHeight() == y) && (stage.getWidth() == x)) {
+			stage.setHeight(lastHeight);
+			stage.setWidth(lastWidth);
+			stage.setX(lastX);
+			stage.setY(lastY);
+		}
+		else {
+			lastHeight = stage.getHeight();
+			lastWidth = stage.getWidth();
+			lastX = stage.getX();
+			lastY = stage.getY();
+			stage.setHeight(y);
+			stage.setWidth(x);
+			stage.setX(0);
+			stage.setY(0);
+		}
 	}
 	
 	@FXML
 	private void btnHideReleased(MouseEvent event) {
-		System.out.println("````");
+		Node source = (Node) event.getSource();
+		Stage stage = (Stage) source.getScene().getWindow();
+		stage.setIconified(true);
 	}
 	
 	/*
