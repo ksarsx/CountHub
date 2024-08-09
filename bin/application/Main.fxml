@@ -90,7 +90,7 @@
                            </image>
                         </ImageView>
                      </children></StackPane>
-                  <StackPane fx:id="bf3" prefHeight="150.0" prefWidth="200.0">
+                  <StackPane fx:id="bf3" prefHeight="115.0">
                      <children>
                         <HBox spacing="10.0">
                            <children>
@@ -117,7 +117,38 @@
                         </HBox>
                      </children>
                   </StackPane>
-                  <HBox fx:id="bf4" VBox.Vgrow="ALWAYS" />
+                  <Pane fx:id="st2" prefHeight="10.0" />
+                  <StackPane fx:id="bf31" prefHeight="115.0">
+                     <children>
+                        <HBox spacing="10.0">
+                           <children>
+                              <Pane prefWidth="30.0" />
+                              <StackPane fx:id="bt11" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                 </children>
+                              </StackPane>
+                              <StackPane fx:id="bt21" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                 </children>
+                              </StackPane>
+                              <StackPane fx:id="bt31" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                 </children>
+                              </StackPane>
+                              <StackPane fx:id="bt41" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                 </children>
+                              </StackPane>
+                              <Pane prefWidth="30.0" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </StackPane>
+                  <Pane fx:id="st3" prefHeight="115.0" />
                </children></VBox>
             <Pane fx:id="border8" onMousePressed="#onBorderRightPressed" prefWidth="5.0" />
          </children>
