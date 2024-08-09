@@ -70,7 +70,19 @@
       <HBox prefHeight="100.0" prefWidth="200.0" VBox.Vgrow="ALWAYS">
          <children>
             <Pane fx:id="border7" onMousePressed="#onBorderLeftPressed" prefWidth="5.0" />
-            <VBox HBox.Hgrow="ALWAYS" />
+            <VBox HBox.Hgrow="ALWAYS">
+               <children>
+                  <StackPane fx:id="bf1" VBox.Vgrow="ALWAYS">
+                     <children>
+                        <ImageView fx:id="bf2" fitHeight="49.0" fitWidth="310.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@COUNT%20HUB.png" />
+                           </image>
+                        </ImageView>
+                     </children></StackPane>
+                  <HBox fx:id="bf3" VBox.Vgrow="ALWAYS" />
+                  <HBox fx:id="bf4" VBox.Vgrow="ALWAYS" />
+               </children></VBox>
             <Pane fx:id="border8" onMousePressed="#onBorderRightPressed" prefWidth="5.0" />
          </children>
       </HBox>
