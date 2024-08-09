@@ -101,6 +101,12 @@
 #bf1 {
 	-fx-background-color: #ffdfa3;
 }
+#st1 {
+	-fx-background-color: #776544;
+}
+#st1:hover {
+	-fx-background-color: #b39f7a;
+}
 #bf3 {
 	-fx-background-color: #ffdfa3;
 }

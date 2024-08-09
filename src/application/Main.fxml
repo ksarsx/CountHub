@@ -22,6 +22,15 @@
                   <HBox VBox.Vgrow="ALWAYS">
                      <children>
                         <Pane fx:id="border4" onMousePressed="#onBorderLeftPressed" prefWidth="5.0" />
+                        <StackPane fx:id="st1" prefHeight="25.0" prefWidth="25.0">
+                           <children>
+                              <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@settings.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </StackPane>
                         <Pane fx:id="border5" onMouseEntered="#onMouseEnteredToTitleBar" onMousePressed="#onMousePressedToTitle" onMouseReleased="#onMouseReleasedFromTitle" HBox.Hgrow="ALWAYS" />
                      </children></HBox>
                </children>
@@ -80,7 +89,16 @@
                            </image>
                         </ImageView>
                      </children></StackPane>
-                  <HBox fx:id="bf3" VBox.Vgrow="ALWAYS" />
+                  <StackPane fx:id="bf3" prefHeight="150.0" prefWidth="200.0">
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Pane prefHeight="200.0" prefWidth="200.0" />
+                              <Pane prefHeight="200.0" prefWidth="200.0" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </StackPane>
                   <HBox fx:id="bf4" VBox.Vgrow="ALWAYS" />
                </children></VBox>
             <Pane fx:id="border8" onMousePressed="#onBorderRightPressed" prefWidth="5.0" />
