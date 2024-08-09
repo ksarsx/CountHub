@@ -6,6 +6,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
 
 <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
    <children>
@@ -91,10 +92,27 @@
                      </children></StackPane>
                   <StackPane fx:id="bf3" prefHeight="150.0" prefWidth="200.0">
                      <children>
-                        <HBox prefHeight="100.0" prefWidth="200.0">
+                        <HBox spacing="10.0">
                            <children>
-                              <Pane prefHeight="200.0" prefWidth="200.0" />
-                              <Pane prefHeight="200.0" prefWidth="200.0" />
+                              <Pane prefWidth="30.0" />
+                              <StackPane fx:id="bt1" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                 </children>
+                              </StackPane>
+                              <StackPane fx:id="bt2" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                 </children></StackPane>
+                              <StackPane fx:id="bt3" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                 </children></StackPane>
+                              <StackPane fx:id="bt4" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                 </children></StackPane>
+                              <Pane prefWidth="30.0" />
                            </children>
                         </HBox>
                      </children>
