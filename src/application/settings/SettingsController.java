@@ -1,4 +1,4 @@
-package application;
+package application.settings;
 
 import java.awt.GraphicsEnvironment;
 import java.io.IOException;
@@ -390,13 +390,13 @@ public class SettingsController {
 	
 	@FXML
 	private void btnBackReleased(MouseEvent event) throws IOException {
-		FXMLLoader loader = new FXMLLoader(getClass().getResource("Main.fxml"));
+		FXMLLoader loader = new FXMLLoader(getClass().getResource("/application/Main.fxml"));
 		Parent root = loader.load();
 		
 		Node source = (Node) event.getSource();
 		Stage stage = (Stage) source.getScene().getWindow();
 		Scene scene = new Scene(root);
-		scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+		scene.getStylesheets().add(getClass().getResource("/application/application.css").toExternalForm());
 		stage.setScene(scene);
 		stage.show();
 	}

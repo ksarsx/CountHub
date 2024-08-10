@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SettingsController">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.settings.SettingsController">
    <children>
       <HBox prefHeight="25.0" prefWidth="600.0">
          <children>
@@ -26,7 +26,7 @@
                            <children>
                               <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@res/back.png" />
+                                    <Image url="@../res/back.png" />
                                  </image>
                               </ImageView>
                            </children>
@@ -52,7 +52,7 @@
                                  <children>
                                     <ImageView fitHeight="10.0" fitWidth="10.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
-                                          <Image url="@res/hide.png" />
+                                          <Image url="@../res/hide.png" />
                                        </image>
                                     </ImageView>
                                  </children>
@@ -61,7 +61,7 @@
                                  <children>
                                     <ImageView fitHeight="10.0" fitWidth="10.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
-                                          <Image url="@res/full.png" />
+                                          <Image url="@../res/full.png" />
                                        </image>
                                     </ImageView>
                                  </children>
@@ -70,7 +70,7 @@
                                  <children>
                                     <ImageView fitHeight="10.0" fitWidth="10.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
-                                          <Image url="@res/close.png" />
+                                          <Image url="@../res/close.png" />
                                        </image>
                                     </ImageView>
                                  </children>
