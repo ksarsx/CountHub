@@ -22,11 +22,11 @@
                   <HBox VBox.Vgrow="ALWAYS">
                      <children>
                         <Pane fx:id="border4" onMousePressed="#onBorderLeftPressed" prefWidth="5.0" />
-                        <StackPane fx:id="st1" prefHeight="25.0" prefWidth="25.0">
+                        <StackPane fx:id="st1" onMouseReleased="#btnBackReleased" prefHeight="25.0" prefWidth="25.0">
                            <children>
                               <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@res/settings.png" />
+                                    <Image url="@res/back.png" />
                                  </image>
                               </ImageView>
                            </children>

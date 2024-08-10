@@ -412,11 +412,10 @@ public class Controller {
 		Node source = (Node) event.getSource();
 		Stage stage = (Stage) source.getScene().getWindow();
 		Scene scene = new Scene(root);
+		scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 		stage.setScene(scene);
 		stage.show();
 	}
-	
-	
 	/*
 	 * finish of switch scene buttons
 	 */
