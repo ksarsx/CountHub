@@ -119,16 +119,6 @@
 #bt3 {
 	-fx-background-color: #776544;
 }
-
-#bf31 {
-	-fx-background-color: #ffdfa3;
-}
-#st2 {
-	-fx-background-color: #ffdfa3;
-}
-#st3 {
-	-fx-background-color: #ffdfa3;
-}
 #bt11 {
 	-fx-background-color: #776544;
 }
@@ -138,3 +128,31 @@
 #bt31 {
 	-fx-background-color: #776544;
 }
+#bt1:hover {
+	-fx-background-color: #b39f7a;
+}
+#bt2:hover {
+	-fx-background-color: #b39f7a;
+}
+#bt3:hover {
+	-fx-background-color: #b39f7a;
+}
+#bt11:hover {
+	-fx-background-color: #b39f7a;
+}
+#bt21:hover {
+	-fx-background-color: #b39f7a;
+}
+#bt31:hover {
+	-fx-background-color: #b39f7a;
+}
+#bf31 {
+	-fx-background-color: #ffdfa3;
+}
+#st2 {
+	-fx-background-color: #ffdfa3;
+}
+#st3 {
+	-fx-background-color: #ffdfa3;
+}
+

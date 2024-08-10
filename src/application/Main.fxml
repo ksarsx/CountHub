@@ -131,7 +131,7 @@
                               </StackPane>
                               <StackPane fx:id="bt31" HBox.hgrow="ALWAYS">
                                  <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="rating        " />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" rating        " />
                                  </children>
                               </StackPane>
                               <Pane prefWidth="30.0" />
