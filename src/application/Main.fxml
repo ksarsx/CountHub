@@ -27,7 +27,7 @@
                            <children>
                               <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@settings.png" />
+                                    <Image url="@res/settings.png" />
                                  </image>
                               </ImageView>
                            </children>
@@ -52,21 +52,21 @@
                                  <children>
                                     <ImageView fitHeight="10.0" fitWidth="10.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
-                                          <Image url="@hide.png" />
+                                          <Image url="@res/hide.png" />
                                        </image></ImageView>
                                  </children></StackPane>
                               <StackPane fx:id="btnFull" onMouseReleased="#btnFullScreenReleased" HBox.Hgrow="ALWAYS">
                                  <children>
                                     <ImageView fitHeight="10.0" fitWidth="10.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
-                                          <Image url="@full.png" />
+                                          <Image url="@res/full.png" />
                                        </image></ImageView>
                                  </children></StackPane>
                               <StackPane fx:id="btnClose" onMouseReleased="#btnCloseReleased" HBox.Hgrow="ALWAYS">
                                  <children>
                                     <ImageView fitHeight="10.0" fitWidth="10.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
-                                          <Image url="@close.png" />
+                                          <Image url="@res/close.png" />
                                        </image></ImageView>
                                  </children></StackPane>
                            </children>
@@ -86,7 +86,7 @@
                      <children>
                         <ImageView fx:id="bf2" fitHeight="49.0" fitWidth="310.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@COUNT%20HUB.png" />
+                              <Image url="@res/COUNT_HUB.png" />
                            </image>
                         </ImageView>
                      </children></StackPane>
@@ -97,20 +97,16 @@
                               <Pane prefWidth="30.0" />
                               <StackPane fx:id="bt1" HBox.hgrow="ALWAYS">
                                  <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Tutorials" />
                                  </children>
                               </StackPane>
                               <StackPane fx:id="bt2" HBox.hgrow="ALWAYS">
                                  <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="solo play" />
                                  </children></StackPane>
                               <StackPane fx:id="bt3" HBox.hgrow="ALWAYS">
                                  <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
-                                 </children></StackPane>
-                              <StackPane fx:id="bt4" HBox.hgrow="ALWAYS">
-                                 <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Profil   " />
                                  </children></StackPane>
                               <Pane prefWidth="30.0" />
                            </children>
@@ -125,22 +121,17 @@
                               <Pane prefWidth="30.0" />
                               <StackPane fx:id="bt11" HBox.hgrow="ALWAYS">
                                  <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Math fight    " />
                                  </children>
                               </StackPane>
                               <StackPane fx:id="bt21" HBox.hgrow="ALWAYS">
                                  <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="solo time play" />
                                  </children>
                               </StackPane>
                               <StackPane fx:id="bt31" HBox.hgrow="ALWAYS">
                                  <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
-                                 </children>
-                              </StackPane>
-                              <StackPane fx:id="bt41" HBox.hgrow="ALWAYS">
-                                 <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="rating        " />
                                  </children>
                               </StackPane>
                               <Pane prefWidth="30.0" />
