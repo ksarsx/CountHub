@@ -3,11 +3,14 @@ package application;
 
 
 import java.awt.GraphicsEnvironment;
+import java.io.IOException;
 
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
@@ -392,12 +395,29 @@ public class Controller {
 			}
 		});
 	}
-	
-	
-	
 	/*
 	 * finish of drag borders
 	 */
 	
 	
+	
+	/*
+	 * switch scene buttons
+	 */
+	@FXML
+	private void btnSettingsReleased(MouseEvent event) throws IOException {
+		FXMLLoader loader = new FXMLLoader(getClass().getResource("settings.fxml"));
+		Parent root = loader.load();
+		
+		Node source = (Node) event.getSource();
+		Stage stage = (Stage) source.getScene().getWindow();
+		Scene scene = new Scene(root);
+		stage.setScene(scene);
+		stage.show();
+	}
+	
+	
+	/*
+	 * finish of switch scene buttons
+	 */
 }
