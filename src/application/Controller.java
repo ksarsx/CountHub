@@ -416,6 +416,37 @@ public class Controller {
 		stage.setScene(scene);
 		stage.show();
 	}
+	
+	@FXML
+	private void btnMathFightReleased(MouseEvent event) {
+		System.out.println("n1");
+	}
+	
+	@FXML
+	private void btnProfilReleased(MouseEvent event) {
+		System.out.println("n1");
+	}
+	
+	@FXML
+	private void btnRatingReleased(MouseEvent event) {
+		System.out.println("n1");
+	}
+	
+	@FXML
+	private void btnSoloPlayReleased(MouseEvent event) {
+		System.out.println("n1");
+	}
+	
+	@FXML
+	private void btnSoloTimePlayReleased(MouseEvent event) {
+		System.out.println("n1");
+	}
+	
+	@FXML
+	private void btnTutorialsReleased(MouseEvent event) {
+		System.out.println("n1");
+	}
+	
 	/*
 	 * finish of switch scene buttons
 	 */

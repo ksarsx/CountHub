@@ -95,16 +95,16 @@
                         <HBox spacing="10.0">
                            <children>
                               <Pane prefWidth="30.0" />
-                              <StackPane fx:id="bt1" HBox.hgrow="ALWAYS">
+                              <StackPane fx:id="bt1" onMouseReleased="#btnTutorialsReleased" HBox.hgrow="ALWAYS">
                                  <children>
                                     <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Tutorials" />
                                  </children>
                               </StackPane>
-                              <StackPane fx:id="bt2" HBox.hgrow="ALWAYS">
+                              <StackPane fx:id="bt2" onMouseReleased="#btnSoloPlayReleased" HBox.hgrow="ALWAYS">
                                  <children>
                                     <Text strokeType="OUTSIDE" strokeWidth="0.0" text="solo play" />
                                  </children></StackPane>
-                              <StackPane fx:id="bt3" HBox.hgrow="ALWAYS">
+                              <StackPane fx:id="bt3" onMouseReleased="#btnProfilReleased" HBox.hgrow="ALWAYS">
                                  <children>
                                     <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Profil   " />
                                  </children></StackPane>
@@ -119,17 +119,17 @@
                         <HBox spacing="10.0">
                            <children>
                               <Pane prefWidth="30.0" />
-                              <StackPane fx:id="bt11" HBox.hgrow="ALWAYS">
+                              <StackPane fx:id="bt11" onMouseReleased="#btnMathFightReleased" HBox.hgrow="ALWAYS">
                                  <children>
                                     <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Math fight    " />
                                  </children>
                               </StackPane>
-                              <StackPane fx:id="bt21" HBox.hgrow="ALWAYS">
+                              <StackPane fx:id="bt21" onMouseReleased="#btnSoloTimePlayReleased" HBox.hgrow="ALWAYS">
                                  <children>
                                     <Text strokeType="OUTSIDE" strokeWidth="0.0" text="solo time play" />
                                  </children>
                               </StackPane>
-                              <StackPane fx:id="bt31" HBox.hgrow="ALWAYS">
+                              <StackPane fx:id="bt31" onMouseReleased="#btnRatingReleased" HBox.hgrow="ALWAYS">
                                  <children>
                                     <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" rating        " />
                                  </children>
