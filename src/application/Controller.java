@@ -431,28 +431,68 @@ public class Controller {
 	}
 	
 	@FXML
-	private void btnProfilReleased(MouseEvent event) {
-		System.out.println("n1");
+	private void btnProfilReleased(MouseEvent event) throws IOException {
+		FXMLLoader loader = new FXMLLoader(getClass().getResource("scenes/profil/profil.fxml"));
+		Parent root = loader.load();
+		
+		Node source = (Node) event.getSource();
+		Stage stage = (Stage) source.getScene().getWindow();
+		Scene scene = new Scene(root);
+		scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+		stage.setScene(scene);
+		stage.show();
 	}
 	
 	@FXML
-	private void btnRatingReleased(MouseEvent event) {
-		System.out.println("n1");
+	private void btnRatingReleased(MouseEvent event) throws IOException {
+		FXMLLoader loader = new FXMLLoader(getClass().getResource("scenes/rating/rating.fxml"));
+		Parent root = loader.load();
+		
+		Node source = (Node) event.getSource();
+		Stage stage = (Stage) source.getScene().getWindow();
+		Scene scene = new Scene(root);
+		scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+		stage.setScene(scene);
+		stage.show();
 	}
 	
 	@FXML
-	private void btnSoloPlayReleased(MouseEvent event) {
-		System.out.println("n1");
+	private void btnSoloPlayReleased(MouseEvent event) throws IOException {
+		FXMLLoader loader = new FXMLLoader(getClass().getResource("scenes/solo_play/solo_play.fxml"));
+		Parent root = loader.load();
+		
+		Node source = (Node) event.getSource();
+		Stage stage = (Stage) source.getScene().getWindow();
+		Scene scene = new Scene(root);
+		scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+		stage.setScene(scene);
+		stage.show();
 	}
 	
 	@FXML
-	private void btnSoloTimePlayReleased(MouseEvent event) {
-		System.out.println("n1");
+	private void btnSoloTimePlayReleased(MouseEvent event) throws IOException {
+		FXMLLoader loader = new FXMLLoader(getClass().getResource("scenes/solo_time_play/solo_time_play.fxml"));
+		Parent root = loader.load();
+		
+		Node source = (Node) event.getSource();
+		Stage stage = (Stage) source.getScene().getWindow();
+		Scene scene = new Scene(root);
+		scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+		stage.setScene(scene);
+		stage.show();
 	}
 	
 	@FXML
-	private void btnTutorialsReleased(MouseEvent event) {
-		System.out.println("n1");
+	private void btnTutorialsReleased(MouseEvent event) throws IOException {
+		FXMLLoader loader = new FXMLLoader(getClass().getResource("scenes/tutorials/tutorials.fxml"));
+		Parent root = loader.load();
+		
+		Node source = (Node) event.getSource();
+		Stage stage = (Stage) source.getScene().getWindow();
+		Scene scene = new Scene(root);
+		scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+		stage.setScene(scene);
+		stage.show();
 	}
 	
 	/*
