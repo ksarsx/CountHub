@@ -1,6 +1,4 @@
-package application;
-
-
+package application.scenes.tutorials;
 
 import java.awt.GraphicsEnvironment;
 import java.io.IOException;
@@ -11,14 +9,10 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
-public class Controller {
-	
+public class TutorialsController {
 	/*
 	 * title buttons
 	 */
@@ -73,8 +67,6 @@ public class Controller {
 	/*
 	 * finish of title buttons
 	 */
-	
-	
 	
 	/*
 	 * title bar drag label settings
@@ -134,10 +126,6 @@ public class Controller {
 	/*
 	 * end of title bar drag label
 	 */
-	
-	
-	
-	
 	
 	/*
 	 * drag borders 
@@ -400,62 +388,16 @@ public class Controller {
 	 */
 	
 	
-	
-	/*
-	 * switch scene buttons
-	 */
 	@FXML
-	private void btnSettingsReleased(MouseEvent event) throws IOException {
-		FXMLLoader loader = new FXMLLoader(getClass().getResource("settings/settings.fxml"));
+	private void btnBackReleased(MouseEvent event) throws IOException {
+		FXMLLoader loader = new FXMLLoader(getClass().getResource("/application/Main.fxml"));
 		Parent root = loader.load();
 		
 		Node source = (Node) event.getSource();
 		Stage stage = (Stage) source.getScene().getWindow();
 		Scene scene = new Scene(root);
-		scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+		scene.getStylesheets().add(getClass().getResource("/application/application.css").toExternalForm());
 		stage.setScene(scene);
 		stage.show();
 	}
-	
-	@FXML
-	private void btnMathFightReleased(MouseEvent event) throws IOException {
-		FXMLLoader loader = new FXMLLoader(getClass().getResource("scenes/math_fight/math_fight.fxml"));
-		Parent root = loader.load();
-		
-		Node source = (Node) event.getSource();
-		Stage stage = (Stage) source.getScene().getWindow();
-		Scene scene = new Scene(root);
-		scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
-		stage.setScene(scene);
-		stage.show();
-	}
-	
-	@FXML
-	private void btnProfilReleased(MouseEvent event) {
-		System.out.println("n1");
-	}
-	
-	@FXML
-	private void btnRatingReleased(MouseEvent event) {
-		System.out.println("n1");
-	}
-	
-	@FXML
-	private void btnSoloPlayReleased(MouseEvent event) {
-		System.out.println("n1");
-	}
-	
-	@FXML
-	private void btnSoloTimePlayReleased(MouseEvent event) {
-		System.out.println("n1");
-	}
-	
-	@FXML
-	private void btnTutorialsReleased(MouseEvent event) {
-		System.out.println("n1");
-	}
-	
-	/*
-	 * finish of switch scene buttons
-	 */
 }
