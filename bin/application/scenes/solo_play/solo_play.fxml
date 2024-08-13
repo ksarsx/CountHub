@@ -95,12 +95,12 @@
                      <content>
                         <VBox alignment="TOP_RIGHT" prefHeight="695.0" prefWidth="360.0">
                            <children>
-                              <StackPane onMouseReleased="#onTestButtonReleased" prefHeight="83.0" prefWidth="360.0">
+                              <StackPane onMouseReleased="#onMode1Released" prefHeight="83.0" prefWidth="360.0">
                                  <children>
                                     <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
                                  </children>
                               </StackPane>
-                              <StackPane layoutX="10.0" layoutY="10.0" prefHeight="83.0" prefWidth="360.0">
+                              <StackPane layoutX="10.0" layoutY="10.0" onMouseReleased="#onMode2Released" prefHeight="83.0" prefWidth="360.0">
                                  <children>
                                     <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
                                  </children>

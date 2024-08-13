@@ -402,7 +402,9 @@ public class SoloPlayController {
 	}
 
 	@FXML
-	private void onTestButtonReleased(MouseEvent event) throws IOException {
+	private void onMode1Released(MouseEvent event) throws IOException {
+		
+		
 		FXMLLoader loader = new FXMLLoader(getClass().getResource("/application/scenes/solo_play/SPG.fxml"));
 		Parent root = loader.load();
 		
@@ -414,7 +416,22 @@ public class SoloPlayController {
 		stage.show();
 	}
 	
-	
+	@FXML
+	private void onMode2Released(MouseEvent event) throws IOException {
+		
+		
+		FXMLLoader loader = new FXMLLoader(getClass().getResource("/application/scenes/solo_play/SPG.fxml"));
+		Parent root = loader.load();
+		
+		
+		
+		Node source = (Node) event.getSource();
+		Stage stage = (Stage) source.getScene().getWindow();
+		Scene scene = new Scene(root);
+		scene.getStylesheets().add(getClass().getResource("/application/application.css").toExternalForm());
+		stage.setScene(scene);
+		stage.show();
+	}
 	
 }
 

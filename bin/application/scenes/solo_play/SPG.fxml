@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.HBox?>
@@ -87,7 +88,14 @@
       <HBox prefHeight="100.0" prefWidth="200.0" VBox.Vgrow="ALWAYS">
          <children>
             <Pane fx:id="border7" onMousePressed="#onBorderLeftPressed" prefWidth="5.0" />
-            <VBox HBox.Hgrow="ALWAYS" />
+            <VBox fx:id="vboxMain" HBox.Hgrow="ALWAYS">
+               <children>
+                  <HBox prefHeight="238.0" prefWidth="790.0">
+                     <children>
+                        <TextArea prefHeight="238.0" prefWidth="269.0" />
+                     </children>
+                  </HBox>
+               </children></VBox>
             <Pane fx:id="border8" onMousePressed="#onBorderRightPressed" prefWidth="5.0" />
          </children>
       </HBox>
