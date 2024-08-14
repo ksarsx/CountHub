@@ -10,6 +10,10 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
@@ -19,15 +23,32 @@ public class SPGController {
 	@FXML
 	private VBox vboxMain;
 	
+	@FXML
+	private TextArea draftArea;
 	
+	@FXML 
+	private TextField answerField;
 	
 	@FXML
     public void initialize() {
-		
-		
-        
-        
+		draftArea.setOnKeyPressed(this::handleKeyForDraft);
+		answerField.setOnKeyPressed(this::handleKeyForAnswer);
     }
+	
+	private void handleKeyForDraft(KeyEvent event) {
+		if (event.isAltDown() && (event.getCode() == KeyCode.E)) {
+			System.out.println("alt + E");
+			answerField.requestFocus();
+		}
+	}
+	
+	private void handleKeyForAnswer(KeyEvent event) {
+		if (event.isAltDown() && (event.getCode() == KeyCode.Q)) {
+			System.out.println("alt + Q");
+			draftArea.requestFocus();
+		}
+	}
+	
 	
 	/*
 	 * title buttons
@@ -402,6 +423,8 @@ public class SPGController {
 	/*
 	 * finish of drag borders
 	 */
+	
+	
 	
 	
 	@FXML
