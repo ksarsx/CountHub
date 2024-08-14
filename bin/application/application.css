@@ -155,4 +155,12 @@
 #st3 {
 	-fx-background-color: #ffdfa3;
 }
+#answerField {
+	-fx-focus-color: #553700;
+	-fx-faint-focus-color: transparent; 
+}
+#draftArea {
+	-fx-focus-color: #553700;
+	-fx-faint-focus-color: transparent;
+}
 
