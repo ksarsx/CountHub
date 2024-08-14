@@ -50,6 +50,74 @@ public class SPGController {
 	}
 	
 	
+	@FXML
+	private void btnDivReleased(MouseEvent event) {
+		System.out.println("text");
+	}
+	@FXML
+	private void btnMultReleased(MouseEvent event) {
+		System.out.println("text");
+	}
+	@FXML
+	private void btnSubReleased(MouseEvent event) {
+		System.out.println("text");
+	}
+	@FXML
+	private void btnSumReleased(MouseEvent event) {
+		System.out.println("text");
+	}
+	@FXML
+	private void btnSevenReleased(MouseEvent event) {
+		System.out.println("text");
+	}
+	@FXML
+	private void btnEightReleased(MouseEvent event) {
+		System.out.println("text");
+	}
+	@FXML
+	private void btnNineReleased(MouseEvent event) {
+		System.out.println("9");
+	}
+	@FXML
+	private void btnFourReleased(MouseEvent event) {
+		System.out.println("text");
+	}
+	@FXML
+	private void btnFiveReleased(MouseEvent event) {
+		System.out.println("text");
+	}
+	@FXML
+	private void btnSixReleased(MouseEvent event) {
+		System.out.println("text");
+	}
+	@FXML
+	private void btnOneReleased(MouseEvent event) {
+		System.out.println("text");
+	}
+	@FXML
+	private void btnTwoReleased(MouseEvent event) {
+		System.out.println("text");
+	}
+	@FXML
+	private void btnThreeReleased(MouseEvent event) {
+		System.out.println("text");
+	}
+	@FXML
+	private void btnZeroReleased(MouseEvent event) {
+		System.out.println("text");
+	}
+	@FXML
+	private void btnEnterReleased(MouseEvent event) {
+		System.out.println("text");
+	}
+	@FXML
+	private void btnDotReleased(MouseEvent event) {
+		System.out.println("text");
+	}
+	
+	
+	
+	
 	/*
 	 * title buttons
 	 */

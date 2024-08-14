@@ -115,14 +115,130 @@
                   </HBox>
                   <VBox prefHeight="200.0" prefWidth="100.0" VBox.vgrow="ALWAYS">
                      <children>
-                        <HBox prefHeight="35.0" prefWidth="790.0">
+                        <HBox prefHeight="50.0" prefWidth="790.0" VBox.vgrow="ALWAYS">
                            <children>
                               <Pane prefWidth="200.0" />
-                              <Pane prefWidth="70.0">
+                              <Pane prefWidth="70.0" />
+                              <StackPane HBox.hgrow="ALWAYS" />
+                              <StackPane layoutX="280.0" layoutY="10.0" onMouseReleased="#btnDivReleased" HBox.hgrow="ALWAYS">
                                  <children>
-                                    <Text layoutX="35.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="/" />
                                  </children>
-                              </Pane>
+                              </StackPane>
+                              <StackPane layoutX="800.0" layoutY="10.0" onMouseReleased="#btnMultReleased" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="*" />
+                                 </children>
+                              </StackPane>
+                              <StackPane layoutX="800.0" layoutY="10.0" onMouseReleased="#btnSubReleased" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="-" />
+                                 </children>
+                              </StackPane>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="50.0" prefWidth="790.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <Pane prefWidth="200.0" />
+                              <Pane prefWidth="70.0" />
+                              <StackPane onMouseReleased="#btnSevenReleased" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="7" />
+                                 </children>
+                              </StackPane>
+                              <StackPane onMouseReleased="#btnEightReleased" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="8" />
+                                 </children>
+                              </StackPane>
+                              <StackPane onMouseReleased="#btnNineReleased" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Text onMouseReleased="#btnNineReleased" strokeType="OUTSIDE" strokeWidth="0.0" text="9" />
+                                 </children>
+                              </StackPane>
+                              <StackPane HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="_" />
+                                 </children>
+                              </StackPane>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="50.0" prefWidth="790.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <Pane prefWidth="200.0" />
+                              <Pane prefWidth="70.0" />
+                              <StackPane onMouseReleased="#btnFourReleased" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="4" />
+                                 </children>
+                              </StackPane>
+                              <StackPane onMouseReleased="#btnFiveReleased" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="5" />
+                                 </children>
+                              </StackPane>
+                              <StackPane onMouseReleased="#btnSixReleased" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="6" />
+                                 </children>
+                              </StackPane>
+                              <StackPane onMouseReleased="#btnSumReleased" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="+" />
+                                 </children>
+                              </StackPane>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="50.0" prefWidth="790.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <Pane prefWidth="200.0" />
+                              <Pane prefWidth="70.0" />
+                              <StackPane onMouseReleased="#btnOneReleased" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="1" />
+                                 </children>
+                              </StackPane>
+                              <StackPane onMouseReleased="#btnTwoReleased" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="2" />
+                                 </children>
+                              </StackPane>
+                              <StackPane onMouseReleased="#btnThreeReleased" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="3" />
+                                 </children>
+                              </StackPane>
+                              <StackPane HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="_" />
+                                 </children>
+                              </StackPane>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="50.0" prefWidth="790.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <Pane prefWidth="200.0" />
+                              <Pane prefWidth="70.0" />
+                              <StackPane onMouseReleased="#btnZeroReleased" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+                                 </children>
+                              </StackPane>
+                              <StackPane HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                 </children>
+                              </StackPane>
+                              <StackPane onMouseReleased="#btnDotReleased" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="." />
+                                 </children>
+                              </StackPane>
+                              <StackPane onMouseReleased="#btnEnterReleased" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="enter" />
+                                 </children>
+                              </StackPane>
                            </children>
                         </HBox>
                      </children>
