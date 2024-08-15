@@ -29,6 +29,8 @@ public class SPGController {
 	@FXML 
 	private TextField answerField;
 	
+	private String whatInFocus = "area";
+	
 	@FXML
     public void initialize() {
 		draftArea.setOnKeyPressed(this::handleKeyForDraft);
@@ -39,6 +41,7 @@ public class SPGController {
 		if (event.isAltDown() && (event.getCode() == KeyCode.E)) {
 			System.out.println("alt + E");
 			answerField.requestFocus();
+			whatInFocus = "field";
 		}
 	}
 	
@@ -46,6 +49,7 @@ public class SPGController {
 		if (event.isAltDown() && (event.getCode() == KeyCode.Q)) {
 			System.out.println("alt + Q");
 			draftArea.requestFocus();
+			whatInFocus = "area";
 		}
 	}
 	
@@ -53,6 +57,11 @@ public class SPGController {
 	@FXML
 	private void btnDivReleased(MouseEvent event) {
 		System.out.println("text");
+		switch (whatInFocus) {
+		case "field":
+			answerField.setText("/");
+		}
+		
 	}
 	@FXML
 	private void btnMultReleased(MouseEvent event) {
