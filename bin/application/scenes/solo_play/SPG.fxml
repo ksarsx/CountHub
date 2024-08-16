@@ -92,14 +92,14 @@
       <HBox prefHeight="100.0" prefWidth="200.0" VBox.Vgrow="ALWAYS">
          <children>
             <Pane fx:id="border7" onMousePressed="#onBorderLeftPressed" prefWidth="5.0" />
-            <VBox fx:id="vboxMain" HBox.Hgrow="ALWAYS">
+            <VBox fx:id="vboxMain" HBox.Hgrow="ALWAYS" HBox.hgrow="ALWAYS">
                <children>
                   <HBox prefHeight="238.0" prefWidth="790.0">
                      <children>
-                        <TextArea fx:id="draftArea" prefHeight="238.0" prefWidth="270.0" />
+                        <TextArea fx:id="draftArea" prefWidth="270.0" />
                         <VBox HBox.hgrow="ALWAYS">
                            <children>
-                              <StackPane prefHeight="109.0" prefWidth="521.0" VBox.vgrow="ALWAYS">
+                              <StackPane VBox.vgrow="ALWAYS">
                                  <children>
                                     <Text strokeType="OUTSIDE" strokeWidth="0.0" text="numbers" textAlignment="CENTER">
                                        <font>
@@ -108,7 +108,7 @@
                                     </Text>
                                  </children>
                               </StackPane>
-                              <TextField fx:id="answerField" />
+                              <TextField fx:id="answerField" VBox.vgrow="ALWAYS" />
                            </children>
                         </VBox>
                      </children>
@@ -117,72 +117,87 @@
                      <children>
                         <HBox prefHeight="50.0" prefWidth="790.0" VBox.vgrow="ALWAYS">
                            <children>
-                              <Pane prefWidth="200.0" />
-                              <Pane prefWidth="70.0" />
-                              <StackPane HBox.hgrow="ALWAYS" />
-                              <StackPane layoutX="280.0" layoutY="10.0" onMouseReleased="#btnDivReleased" HBox.hgrow="ALWAYS">
+                              <StackPane fx:id="mode_button" layoutX="280.0" layoutY="10.0" onMouseReleased="#btnDivReleased" HBox.hgrow="ALWAYS">
                                  <children>
                                     <Text strokeType="OUTSIDE" strokeWidth="0.0" text="/" />
                                  </children>
                               </StackPane>
-                              <StackPane layoutX="800.0" layoutY="10.0" onMouseReleased="#btnMultReleased" HBox.hgrow="ALWAYS">
+                              <StackPane fx:id="mode_button" layoutX="800.0" layoutY="10.0" onMouseReleased="#btnMultReleased" HBox.hgrow="ALWAYS">
                                  <children>
                                     <Text strokeType="OUTSIDE" strokeWidth="0.0" text="*" />
                                  </children>
                               </StackPane>
-                              <StackPane layoutX="800.0" layoutY="10.0" onMouseReleased="#btnSubReleased" HBox.hgrow="ALWAYS">
+                              <StackPane fx:id="mode_button" layoutX="800.0" layoutY="10.0" onMouseReleased="#btnSubReleased" HBox.hgrow="ALWAYS">
                                  <children>
                                     <Text strokeType="OUTSIDE" strokeWidth="0.0" text="-" />
                                  </children>
                               </StackPane>
                            </children>
                         </HBox>
-                        <HBox prefHeight="50.0" prefWidth="790.0" VBox.vgrow="ALWAYS">
+                        <HBox alignment="CENTER" VBox.vgrow="ALWAYS">
                            <children>
-                              <Pane prefWidth="200.0" />
-                              <Pane prefWidth="70.0" />
-                              <StackPane onMouseReleased="#btnSevenReleased" HBox.hgrow="ALWAYS">
+                              <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
                                  <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="7" />
+                                    <HBox prefHeight="50.0" prefWidth="729.0" VBox.vgrow="ALWAYS">
+                                       <children>
+                                          <StackPane fx:id="mode_button" onMouseReleased="#btnSevenReleased" HBox.hgrow="ALWAYS">
+                                             <children>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="7" />
+                                             </children>
+                                          </StackPane>
+                                          <StackPane fx:id="mode_button" onMouseReleased="#btnEightReleased" HBox.hgrow="ALWAYS">
+                                             <children>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="8" />
+                                             </children>
+                                          </StackPane>
+                                          <StackPane fx:id="mode_button" onMouseReleased="#btnNineReleased" HBox.hgrow="ALWAYS">
+                                             <children>
+                                                <Text onMouseReleased="#btnNineReleased" strokeType="OUTSIDE" strokeWidth="0.0" text="9" />
+                                             </children>
+                                          </StackPane>
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="50.0" prefWidth="790.0" VBox.vgrow="ALWAYS">
+                                       <children>
+                                          <StackPane fx:id="mode_button" onMouseReleased="#btnFourReleased" HBox.hgrow="ALWAYS">
+                                             <children>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="4" />
+                                             </children>
+                                          </StackPane>
+                                          <StackPane fx:id="mode_button" onMouseReleased="#btnFiveReleased" HBox.hgrow="ALWAYS">
+                                             <children>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="5" />
+                                             </children>
+                                          </StackPane>
+                                          <StackPane fx:id="mode_button" onMouseReleased="#btnSixReleased" HBox.hgrow="ALWAYS">
+                                             <children>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="6" />
+                                             </children>
+                                          </StackPane>
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="50.0" prefWidth="790.0" VBox.vgrow="ALWAYS">
+                                       <children>
+                                          <StackPane fx:id="mode_button" onMouseReleased="#btnOneReleased" HBox.hgrow="ALWAYS">
+                                             <children>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="1" />
+                                             </children>
+                                          </StackPane>
+                                          <StackPane fx:id="mode_button" onMouseReleased="#btnTwoReleased" HBox.hgrow="ALWAYS">
+                                             <children>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="2" />
+                                             </children>
+                                          </StackPane>
+                                          <StackPane fx:id="mode_button" onMouseReleased="#btnThreeReleased" HBox.hgrow="ALWAYS">
+                                             <children>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="3" />
+                                             </children>
+                                          </StackPane>
+                                       </children>
+                                    </HBox>
                                  </children>
-                              </StackPane>
-                              <StackPane onMouseReleased="#btnEightReleased" HBox.hgrow="ALWAYS">
-                                 <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="8" />
-                                 </children>
-                              </StackPane>
-                              <StackPane onMouseReleased="#btnNineReleased" HBox.hgrow="ALWAYS">
-                                 <children>
-                                    <Text onMouseReleased="#btnNineReleased" strokeType="OUTSIDE" strokeWidth="0.0" text="9" />
-                                 </children>
-                              </StackPane>
-                              <StackPane HBox.hgrow="ALWAYS">
-                                 <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="_" />
-                                 </children>
-                              </StackPane>
-                           </children>
-                        </HBox>
-                        <HBox prefHeight="50.0" prefWidth="790.0" VBox.vgrow="ALWAYS">
-                           <children>
-                              <Pane prefWidth="200.0" />
-                              <Pane prefWidth="70.0" />
-                              <StackPane onMouseReleased="#btnFourReleased" HBox.hgrow="ALWAYS">
-                                 <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="4" />
-                                 </children>
-                              </StackPane>
-                              <StackPane onMouseReleased="#btnFiveReleased" HBox.hgrow="ALWAYS">
-                                 <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="5" />
-                                 </children>
-                              </StackPane>
-                              <StackPane onMouseReleased="#btnSixReleased" HBox.hgrow="ALWAYS">
-                                 <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="6" />
-                                 </children>
-                              </StackPane>
-                              <StackPane onMouseReleased="#btnSumReleased" HBox.hgrow="ALWAYS">
+                              </VBox>
+                              <StackPane fx:id="mode_button" onMouseReleased="#btnSumReleased" prefWidth="90.0">
                                  <children>
                                     <Text strokeType="OUTSIDE" strokeWidth="0.0" text="+" />
                                  </children>
@@ -191,50 +206,17 @@
                         </HBox>
                         <HBox prefHeight="50.0" prefWidth="790.0" VBox.vgrow="ALWAYS">
                            <children>
-                              <Pane prefWidth="200.0" />
-                              <Pane prefWidth="70.0" />
-                              <StackPane onMouseReleased="#btnOneReleased" HBox.hgrow="ALWAYS">
-                                 <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="1" />
-                                 </children>
-                              </StackPane>
-                              <StackPane onMouseReleased="#btnTwoReleased" HBox.hgrow="ALWAYS">
-                                 <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="2" />
-                                 </children>
-                              </StackPane>
-                              <StackPane onMouseReleased="#btnThreeReleased" HBox.hgrow="ALWAYS">
-                                 <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="3" />
-                                 </children>
-                              </StackPane>
-                              <StackPane HBox.hgrow="ALWAYS">
-                                 <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="_" />
-                                 </children>
-                              </StackPane>
-                           </children>
-                        </HBox>
-                        <HBox prefHeight="50.0" prefWidth="790.0" VBox.vgrow="ALWAYS">
-                           <children>
-                              <Pane prefWidth="200.0" />
-                              <Pane prefWidth="70.0" />
-                              <StackPane onMouseReleased="#btnZeroReleased" HBox.hgrow="ALWAYS">
+                              <StackPane fx:id="mode_button" onMouseReleased="#btnZeroReleased" HBox.hgrow="ALWAYS">
                                  <children>
                                     <Text strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
                                  </children>
                               </StackPane>
-                              <StackPane HBox.hgrow="ALWAYS">
-                                 <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
-                                 </children>
-                              </StackPane>
-                              <StackPane onMouseReleased="#btnDotReleased" HBox.hgrow="ALWAYS">
+                              <StackPane fx:id="mode_button" onMouseReleased="#btnDotReleased" HBox.hgrow="ALWAYS">
                                  <children>
                                     <Text strokeType="OUTSIDE" strokeWidth="0.0" text="." />
                                  </children>
                               </StackPane>
-                              <StackPane onMouseReleased="#btnEnterReleased" HBox.hgrow="ALWAYS">
+                              <StackPane fx:id="mode_button" onMouseReleased="#btnEnterReleased" HBox.hgrow="ALWAYS">
                                  <children>
                                     <Text strokeType="OUTSIDE" strokeWidth="0.0" text="enter" />
                                  </children>

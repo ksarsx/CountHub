@@ -163,4 +163,14 @@
 	-fx-focus-color: #553700;
 	-fx-faint-focus-color: transparent;
 }
+#mode_button {
+	-fx-background-color: #776544;
+	-fx-border-color: #ffdfa3;
+    -fx-border-width: 4px;
+}
+#mode_button:hover {
+	-fx-background-color: #b39f7a;
+	-fx-border-color: #ffdfa3;
+    -fx-border-width: 4px;
+}
 
