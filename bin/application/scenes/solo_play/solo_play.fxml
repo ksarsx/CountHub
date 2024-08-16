@@ -11,7 +11,7 @@
 
 <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.scenes.solo_play.SoloPlayController">
    <children>
-      <HBox prefHeight="25.0" prefWidth="600.0">
+      <HBox prefHeight="25.0">
          <children>
             <VBox HBox.hgrow="ALWAYS">
                <children>
@@ -86,7 +86,7 @@
             </VBox>
          </children>
       </HBox>
-      <HBox prefHeight="100.0" prefWidth="200.0" VBox.Vgrow="ALWAYS">
+      <HBox VBox.Vgrow="ALWAYS">
          <children>
             <Pane fx:id="border7" onMousePressed="#onBorderLeftPressed" prefWidth="5.0" />
             <HBox HBox.hgrow="ALWAYS">

@@ -307,6 +307,7 @@ public class Controller {
 		});
 	}
 	
+	
 	@FXML
 	private void onBorderBottomLeftPressed(MouseEvent event) {
 		Node source = (Node) event.getSource();
@@ -395,6 +396,29 @@ public class Controller {
 			}
 		});
 	}
+	
+	
+	@FXML
+	private void onBorderRightReleased(MouseEvent event) {
+		Node source = (Node) event.getSource();
+		Parent parent = source.getParent();
+		
+		System.out.println("OutSide");
+		parent.setOnMousePressed(null);
+		parent.setOnMouseDragged(null);
+	}
+	@FXML
+	private void onBorderLeftReleased(MouseEvent event) {
+		Node source = (Node) event.getSource();
+		Parent parent = source.getParent();
+		
+		System.out.println("OutSide");
+		parent.setOnMousePressed(null);
+		parent.setOnMouseDragged(null);
+	}
+	
+	
+	
 	/*
 	 * finish of drag borders
 	 */
