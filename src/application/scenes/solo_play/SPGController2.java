@@ -9,10 +9,132 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
-public class SoloPlayController {
+public class SPGController2 {
+	
+	@FXML
+	private VBox vboxMain;
+	
+	@FXML
+	private TextArea draftArea;
+	
+	@FXML 
+	private TextField answerField;
+	
+	private String whatInFocus;
+	
+	@FXML
+    public void initialize() {
+		draftArea.setOnKeyPressed(this::handleKeyForDraft);
+		answerField.setOnKeyPressed(this::handleKeyForAnswer);
+    }
+	
+	private void handleKeyForDraft(KeyEvent event) {
+		if (event.isAltDown() && (event.getCode() == KeyCode.E)) {
+			System.out.println("alt + E");
+			answerField.requestFocus();
+		}
+	}
+	
+	private void handleKeyForAnswer(KeyEvent event) {
+		if (event.isAltDown() && (event.getCode() == KeyCode.Q)) {
+			System.out.println("alt + Q");
+			draftArea.requestFocus();
+		}
+	}
+	
+	private String getFocus(MouseEvent event) {
+		Node source = (Node) event.getSource();
+		Scene scene = source.getScene();
+		Node gfo = scene.getFocusOwner();
+		return gfo + "";
+	}
+	
+	
+	@FXML
+	private void btnDivReleased(MouseEvent event) {
+		System.out.println("text");
+		System.out.println(getFocus(event));
+		
+		
+		switch (whatInFocus) {
+		case "field":
+			answerField.setText("/");
+		}
+		
+	}
+	@FXML
+	private void btnMultReleased(MouseEvent event) {
+		System.out.println("text");
+	}
+	@FXML
+	private void btnSubReleased(MouseEvent event) {
+		System.out.println("text");
+	}
+	@FXML
+	private void btnSumReleased(MouseEvent event) {
+		System.out.println("text");
+	}
+	@FXML
+	private void btnSevenReleased(MouseEvent event) {
+		System.out.println("text");
+	}
+	@FXML
+	private void btnEightReleased(MouseEvent event) {
+		System.out.println("text");
+	}
+	@FXML
+	private void btnNineReleased(MouseEvent event) {
+		System.out.println("9");
+	}
+	@FXML
+	private void btnFourReleased(MouseEvent event) {
+		System.out.println("text");
+	}
+	@FXML
+	private void btnFiveReleased(MouseEvent event) {
+		System.out.println("text");
+	}
+	@FXML
+	private void btnSixReleased(MouseEvent event) {
+		System.out.println("text");
+	}
+	@FXML
+	private void btnOneReleased(MouseEvent event) {
+		System.out.println("text");
+	}
+	@FXML
+	private void btnTwoReleased(MouseEvent event) {
+		System.out.println("text");
+	}
+	@FXML
+	private void btnThreeReleased(MouseEvent event) {
+		System.out.println("text");
+	}
+	@FXML
+	private void btnZeroReleased(MouseEvent event) {
+		System.out.println("text");
+	}
+	@FXML
+	private void btnEnterReleased(MouseEvent event) {
+		System.out.println("text");
+	}
+	@FXML
+	private void btnDotReleased(MouseEvent event) {
+		System.out.println("text");
+	}
+	
+	
+	
+	
 	/*
 	 * title buttons
 	 */
@@ -388,6 +510,8 @@ public class SoloPlayController {
 	 */
 	
 	
+	
+	
 	@FXML
 	private void btnBackReleased(MouseEvent event) throws IOException {
 		FXMLLoader loader = new FXMLLoader(getClass().getResource("/application/Main.fxml"));
@@ -400,41 +524,6 @@ public class SoloPlayController {
 		stage.setScene(scene);
 		stage.show();
 	}
-
-	@FXML
-	private void onMode1Released(MouseEvent event) throws IOException {
-		
-		
-		FXMLLoader loader = new FXMLLoader(getClass().getResource("/application/scenes/solo_play/SPG.fxml"));
-		Parent root = loader.load();
-		
-		Node source = (Node) event.getSource();
-		Stage stage = (Stage) source.getScene().getWindow();
-		Scene scene = new Scene(root);
-		scene.getStylesheets().add(getClass().getResource("/application/application.css").toExternalForm());
-		stage.setScene(scene);
-		stage.show();
-	}
 	
-	@FXML
-	private void onMode2Released(MouseEvent event) throws IOException {
-		
-		
-		FXMLLoader loader = new FXMLLoader(getClass().getResource("/application/scenes/solo_play/SPG.fxml"));
-		Parent root = loader.load();
-		
-		
-		
-		Node source = (Node) event.getSource();
-		Stage stage = (Stage) source.getScene().getWindow();
-		Scene scene = new Scene(root);
-		SoloPlayModeHandler.scene = scene; 
-		scene.getStylesheets().add(getClass().getResource("/application/application.css").toExternalForm());
-		stage.setScene(scene);
-		stage.show();
-	}
 	
 }
-
-
-

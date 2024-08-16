@@ -29,7 +29,6 @@ public class SPGController {
 	@FXML 
 	private TextField answerField;
 	
-	private String whatInFocus = "area";
 	
 	@FXML
     public void initialize() {
@@ -41,7 +40,6 @@ public class SPGController {
 		if (event.isAltDown() && (event.getCode() == KeyCode.E)) {
 			System.out.println("alt + E");
 			answerField.requestFocus();
-			whatInFocus = "field";
 		}
 	}
 	
@@ -49,71 +47,307 @@ public class SPGController {
 		if (event.isAltDown() && (event.getCode() == KeyCode.Q)) {
 			System.out.println("alt + Q");
 			draftArea.requestFocus();
-			whatInFocus = "area";
 		}
 	}
+	
+	
 	
 	
 	@FXML
 	private void btnDivReleased(MouseEvent event) {
 		System.out.println("text");
-		switch (whatInFocus) {
-		case "field":
-			answerField.setText("/");
+		Node source = (Node) event.getSource();
+		Scene scene = source.getScene();
+		String focus = scene.getFocusOwner().getId();
+		
+		String text = "";
+		switch (focus) {
+		case "draftArea":
+			text = draftArea.getText();
+			text += "/";
+			draftArea.setText(text);
+			break;
+		case "answerField":
+			text = answerField.getText();
+			text += "/";
+			answerField.setText(text);
+			break;
+			
 		}
 		
 	}
 	@FXML
 	private void btnMultReleased(MouseEvent event) {
 		System.out.println("text");
+		Node source = (Node) event.getSource();
+		Scene scene = source.getScene();
+		String focus = scene.getFocusOwner().getId();
+		
+		String text = "";
+		switch (focus) {
+		case "draftArea":
+			text = draftArea.getText();
+			text += "*";
+			draftArea.setText(text);
+			break;
+		case "answerField":
+			text = answerField.getText();
+			text += "*";
+			answerField.setText(text);
+			break;
+		}
 	}
 	@FXML
 	private void btnSubReleased(MouseEvent event) {
 		System.out.println("text");
+		Node source = (Node) event.getSource();
+		Scene scene = source.getScene();
+		String focus = scene.getFocusOwner().getId();
+		
+		String text = "";
+		switch (focus) {
+		case "draftArea":
+			text = draftArea.getText();
+			text += "-";
+			draftArea.setText(text);
+			break;
+		case "answerField":
+			text = answerField.getText();
+			text += "-";
+			answerField.setText(text);
+			break;
+		}
 	}
 	@FXML
 	private void btnSumReleased(MouseEvent event) {
 		System.out.println("text");
+		Node source = (Node) event.getSource();
+		Scene scene = source.getScene();
+		String focus = scene.getFocusOwner().getId();
+		
+		String text = "";
+		switch (focus) {
+		case "draftArea":
+			text = draftArea.getText();
+			text += "+";
+			draftArea.setText(text);
+			break;
+		case "answerField":
+			text = answerField.getText();
+			text += "+";
+			answerField.setText(text);
+			break;
+		}
 	}
 	@FXML
 	private void btnSevenReleased(MouseEvent event) {
 		System.out.println("text");
+		Node source = (Node) event.getSource();
+		Scene scene = source.getScene();
+		String focus = scene.getFocusOwner().getId();
+		
+		String text = "";
+		switch (focus) {
+		case "draftArea":
+			text = draftArea.getText();
+			text += "7";
+			draftArea.setText(text);
+			break;
+		case "answerField":
+			text = answerField.getText();
+			text += "7";
+			answerField.setText(text);
+			break;
+		}
 	}
 	@FXML
 	private void btnEightReleased(MouseEvent event) {
 		System.out.println("text");
+		Node source = (Node) event.getSource();
+		Scene scene = source.getScene();
+		String focus = scene.getFocusOwner().getId();
+		
+		String text = "";
+		switch (focus) {
+		case "draftArea":
+			text = draftArea.getText();
+			text += "8";
+			draftArea.setText(text);
+			break;
+		case "answerField":
+			text = answerField.getText();
+			text += "8";
+			answerField.setText(text);
+			break;
+		}
 	}
 	@FXML
 	private void btnNineReleased(MouseEvent event) {
 		System.out.println("9");
+		Node source = (Node) event.getSource();
+		Scene scene = source.getScene();
+		String focus = scene.getFocusOwner().getId();
+		
+		String text = "";
+		switch (focus) {
+		case "draftArea":
+			text = draftArea.getText();
+			text += "9";
+			draftArea.setText(text);
+			break;
+		case "answerField":
+			text = answerField.getText();
+			text += "9";
+			answerField.setText(text);
+			break;
+		}
 	}
 	@FXML
 	private void btnFourReleased(MouseEvent event) {
 		System.out.println("text");
+		Node source = (Node) event.getSource();
+		Scene scene = source.getScene();
+		String focus = scene.getFocusOwner().getId();
+		
+		String text = "";
+		switch (focus) {
+		case "draftArea":
+			text = draftArea.getText();
+			text += "4";
+			draftArea.setText(text);
+			break;
+		case "answerField":
+			text = answerField.getText();
+			text += "4";
+			answerField.setText(text);
+			break;
+		}
 	}
 	@FXML
 	private void btnFiveReleased(MouseEvent event) {
 		System.out.println("text");
+		Node source = (Node) event.getSource();
+		Scene scene = source.getScene();
+		String focus = scene.getFocusOwner().getId();
+		
+		String text = "";
+		switch (focus) {
+		case "draftArea":
+			text = draftArea.getText();
+			text += "5";
+			draftArea.setText(text);
+			break;
+		case "answerField":
+			text = answerField.getText();
+			text += "5";
+			answerField.setText(text);
+			break;
+		}
 	}
 	@FXML
 	private void btnSixReleased(MouseEvent event) {
 		System.out.println("text");
+		Node source = (Node) event.getSource();
+		Scene scene = source.getScene();
+		String focus = scene.getFocusOwner().getId();
+		
+		String text = "";
+		switch (focus) {
+		case "draftArea":
+			text = draftArea.getText();
+			text += "6";
+			draftArea.setText(text);
+			break;
+		case "answerField":
+			text = answerField.getText();
+			text += "6";
+			answerField.setText(text);
+			break;
+		}
 	}
 	@FXML
 	private void btnOneReleased(MouseEvent event) {
 		System.out.println("text");
+		Node source = (Node) event.getSource();
+		Scene scene = source.getScene();
+		String focus = scene.getFocusOwner().getId();
+		
+		String text = "";
+		switch (focus) {
+		case "draftArea":
+			text = draftArea.getText();
+			text += "1";
+			draftArea.setText(text);
+			break;
+		case "answerField":
+			text = answerField.getText();
+			text += "1";
+			answerField.setText(text);
+			break;
+		}
 	}
 	@FXML
 	private void btnTwoReleased(MouseEvent event) {
 		System.out.println("text");
+		Node source = (Node) event.getSource();
+		Scene scene = source.getScene();
+		String focus = scene.getFocusOwner().getId();
+		
+		String text = "";
+		switch (focus) {
+		case "draftArea":
+			text = draftArea.getText();
+			text += "2";
+			draftArea.setText(text);
+			break;
+		case "answerField":
+			text = answerField.getText();
+			text += "2";
+			answerField.setText(text);
+			break;
+		}
 	}
 	@FXML
 	private void btnThreeReleased(MouseEvent event) {
 		System.out.println("text");
+		Node source = (Node) event.getSource();
+		Scene scene = source.getScene();
+		String focus = scene.getFocusOwner().getId();
+		
+		String text = "";
+		switch (focus) {
+		case "draftArea":
+			text = draftArea.getText();
+			text += "3";
+			draftArea.setText(text);
+			break;
+		case "answerField":
+			text = answerField.getText();
+			text += "3";
+			answerField.setText(text);
+			break;
+		}
 	}
 	@FXML
 	private void btnZeroReleased(MouseEvent event) {
 		System.out.println("text");
+		Node source = (Node) event.getSource();
+		Scene scene = source.getScene();
+		String focus = scene.getFocusOwner().getId();
+		
+		String text = "";
+		switch (focus) {
+		case "draftArea":
+			text = draftArea.getText();
+			text += "0";
+			draftArea.setText(text);
+			break;
+		case "answerField":
+			text = answerField.getText();
+			text += "0";
+			answerField.setText(text);
+			break;
+		}
 	}
 	@FXML
 	private void btnEnterReleased(MouseEvent event) {
@@ -122,6 +356,23 @@ public class SPGController {
 	@FXML
 	private void btnDotReleased(MouseEvent event) {
 		System.out.println("text");
+		Node source = (Node) event.getSource();
+		Scene scene = source.getScene();
+		String focus = scene.getFocusOwner().getId();
+		
+		String text = "";
+		switch (focus) {
+		case "draftArea":
+			text = draftArea.getText();
+			text += ".";
+			draftArea.setText(text);
+			break;
+		case "answerField":
+			text = answerField.getText();
+			text += ".";
+			answerField.setText(text);
+			break;
+		}
 	}
 	
 	

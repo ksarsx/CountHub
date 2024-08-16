@@ -12,7 +12,7 @@ import javafx.scene.Scene;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
-public class SoloPlayController {
+public class SoloPlayController2 {
 	/*
 	 * title buttons
 	 */
