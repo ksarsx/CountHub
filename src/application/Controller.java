@@ -513,7 +513,8 @@ public class Controller {
 		
 		Node source = (Node) event.getSource();
 		Stage stage = (Stage) source.getScene().getWindow();
-		Scene scene = new Scene(root);
+		
+		Scene scene = new Scene(root,stage.getWidth(), stage.getHeight()); // withaout it have a grafick error
 		scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 		stage.setScene(scene);
 		stage.show();
