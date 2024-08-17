@@ -395,7 +395,7 @@ public class SoloTimePlayController {
 		
 		Node source = (Node) event.getSource();
 		Stage stage = (Stage) source.getScene().getWindow();
-		Scene scene = new Scene(root);
+		Scene scene = new Scene(root, stage.getWidth(), stage.getHeight());
 		scene.getStylesheets().add(getClass().getResource("/application/application.css").toExternalForm());
 		stage.setScene(scene);
 		stage.show();
