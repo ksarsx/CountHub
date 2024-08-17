@@ -135,7 +135,7 @@ public class SoloTimePlayController {
 	private void onBorderReleased(MouseEvent event) {
 		Node source = (Node) event.getSource();
 		Parent parent = source.getParent();
-		
+		System.out.println("test3");
 		parent.setOnMousePressed(null);
 		parent.setOnMouseDragged(null);
 	}
