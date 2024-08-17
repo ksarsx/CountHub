@@ -200,6 +200,8 @@ public class Controller {
 		});
 	}
 	
+
+	
 	@FXML
 	private void onBorderTopPressed(MouseEvent event) {
 		Node source = (Node) event.getSource();
@@ -416,6 +418,63 @@ public class Controller {
 		parent.setOnMousePressed(null);
 		parent.setOnMouseDragged(null);
 	}
+	@FXML
+	private void onBorderTopLeftReleased(MouseEvent event) {
+		Node source = (Node) event.getSource();
+		Parent parent = source.getParent();
+		
+		System.out.println("OutSide");
+		parent.setOnMousePressed(null);
+		parent.setOnMouseDragged(null);
+	}
+	@FXML
+	private void onBorderTopReleased(MouseEvent event) {
+		Node source = (Node) event.getSource();
+		Parent parent = source.getParent();
+		
+		System.out.println("OutSide");
+		parent.setOnMousePressed(null);
+		parent.setOnMouseDragged(null);
+	}
+	@FXML
+	private void onBorderTopRightReleased(MouseEvent event) {
+		Node source = (Node) event.getSource();
+		Parent parent = source.getParent();
+		
+		System.out.println("OutSide");
+		parent.setOnMousePressed(null);
+		parent.setOnMouseDragged(null);
+	}
+	@FXML
+	private void onBorderBottomLeftReleased(MouseEvent event) {
+		Node source = (Node) event.getSource();
+		Parent parent = source.getParent();
+		
+		System.out.println("OutSide");
+		parent.setOnMousePressed(null);
+		parent.setOnMouseDragged(null);
+	}
+	@FXML
+	private void onBorderBottomReleased(MouseEvent event) {
+		Node source = (Node) event.getSource();
+		Parent parent = source.getParent();
+		
+		System.out.println("OutSide");
+		parent.setOnMousePressed(null);
+		parent.setOnMouseDragged(null);
+	}
+	@FXML
+	private void onBorderBottomRightReleased(MouseEvent event) {
+		Node source = (Node) event.getSource();
+		Parent parent = source.getParent();
+		
+		System.out.println("OutSide");
+		parent.setOnMousePressed(null);
+		parent.setOnMouseDragged(null);
+	}
+	
+	
+	
 	
 	
 	
