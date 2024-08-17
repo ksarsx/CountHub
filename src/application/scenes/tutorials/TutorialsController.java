@@ -119,7 +119,7 @@ public class TutorialsController {
 	public void onMouseReleasedFromTitle(MouseEvent event) {
 		Node source = (Node) event.getSource();
 		Parent parent = source.getParent();
-			
+		System.out.println("test5");
 		parent.setOnMousePressed(null);
 		parent.setOnMouseDragged(null);
 	}
@@ -135,7 +135,7 @@ public class TutorialsController {
 	private void onBorderReleased(MouseEvent event) {
 		Node source = (Node) event.getSource();
 		Parent parent = source.getParent();
-		
+		System.out.println("test2");
 		parent.setOnMousePressed(null);
 		parent.setOnMouseDragged(null);
 	}
