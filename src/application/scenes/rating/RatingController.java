@@ -120,7 +120,7 @@ public class RatingController {
 	public void onMouseReleasedFromTitle(MouseEvent event) {
 		Node source = (Node) event.getSource();
 		Parent parent = source.getParent();
-			
+		System.out.println("test1");
 		parent.setOnMousePressed(null);
 		parent.setOnMouseDragged(null);
 	}
@@ -136,7 +136,7 @@ public class RatingController {
 	private void onBorderReleased(MouseEvent event) {
 		Node source = (Node) event.getSource();
 		Parent parent = source.getParent();
-		
+		System.out.println("out1");
 		parent.setOnMousePressed(null);
 		parent.setOnMouseDragged(null);
 	}

@@ -136,7 +136,7 @@ public class ProfilController {
 	private void onBorderReleased(MouseEvent event) {
 		Node source = (Node) event.getSource();
 		Parent parent = source.getParent();
-		
+		System.out.println("test");
 		parent.setOnMousePressed(null);
 		parent.setOnMouseDragged(null);
 	}

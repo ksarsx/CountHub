@@ -19,13 +19,13 @@
                <children>
                   <HBox prefHeight="5.0">
                      <children>
-                        <Pane fx:id="border3" onMousePressed="#onBorderTopLeftPressed" prefHeight="5.0" prefWidth="10.0" />
-                        <Pane fx:id="border1" onMousePressed="#onBorderTopPressed" prefHeight="5.0" HBox.hgrow="ALWAYS" />
+                        <Pane fx:id="border3" onMousePressed="#onBorderTopLeftPressed" onMouseReleased="#onBorderReleased" prefHeight="5.0" prefWidth="10.0" />
+                        <Pane fx:id="border1" onMousePressed="#onBorderTopPressed" onMouseReleased="#onBorderReleased" prefHeight="5.0" HBox.hgrow="ALWAYS" />
                      </children>
                   </HBox>
                   <HBox VBox.Vgrow="ALWAYS">
                      <children>
-                        <Pane fx:id="border4" onMousePressed="#onBorderLeftPressed" prefWidth="5.0" />
+                        <Pane fx:id="border4" onMousePressed="#onBorderLeftPressed" onMouseReleased="#onBorderReleased" prefWidth="5.0" />
                         <StackPane fx:id="st1" onMouseReleased="#btnBackReleased" prefHeight="25.0" prefWidth="25.0">
                            <children>
                               <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
@@ -35,8 +35,8 @@
                               </ImageView>
                            </children>
                         </StackPane>
-                        <Pane fx:id="border5" onMouseEntered="#onMouseEnteredToTitleBar" onMousePressed="#onMousePressedToTitle" onMouseReleased="#onMouseReleasedFromTitle" HBox.Hgrow="ALWAYS" />
-                        <Pane fx:id="border51" layoutX="40.0" layoutY="10.0" onMouseEntered="#onMouseEnteredToTitleBar" onMousePressed="#onMousePressedToTitle" onMouseReleased="#onMouseReleasedFromTitle" />
+                        <Pane fx:id="border5" onMouseEntered="#onMouseEnteredToTitleBar" onMousePressed="#onMousePressedToTitle" onMouseReleased="#onBorderReleased" HBox.Hgrow="ALWAYS" />
+                        <Pane fx:id="border51" layoutX="40.0" layoutY="10.0" onMouseEntered="#onMouseEnteredToTitleBar" onMousePressed="#onMousePressedToTitle" onMouseReleased="#onBorderReleased" />
                      </children>
                   </HBox>
                </children>
@@ -45,8 +45,8 @@
                <children>
                   <HBox prefHeight="1.0">
                      <children>
-                        <Pane fx:id="border2" onMousePressed="#onBorderTopPressed" prefHeight="1.0" HBox.Hgrow="ALWAYS" />
-                        <Pane fx:id="border12" onMousePressed="#onBorderTopRightPressed" prefHeight="1.0" prefWidth="10.0" />
+                        <Pane fx:id="border2" onMousePressed="#onBorderTopPressed" onMouseReleased="#onBorderReleased" prefHeight="1.0" HBox.Hgrow="ALWAYS" />
+                        <Pane fx:id="border12" onMousePressed="#onBorderTopRightPressed" onMouseReleased="#onBorderReleased" prefHeight="1.0" prefWidth="10.0" />
                      </children>
                   </HBox>
                   <HBox VBox.Vgrow="ALWAYS">
@@ -82,7 +82,7 @@
                               </StackPane>
                            </children>
                         </HBox>
-                        <Pane fx:id="border6" onMousePressed="#onBorderRightPressed" prefWidth="1.0" />
+                        <Pane fx:id="border6" onMousePressed="#onBorderRightPressed" onMouseReleased="#onBorderReleased" prefWidth="1.0" />
                      </children>
                   </HBox>
                </children>
@@ -91,7 +91,7 @@
       </HBox>
       <HBox prefHeight="100.0" prefWidth="200.0" VBox.Vgrow="ALWAYS">
          <children>
-            <Pane fx:id="border7" onMousePressed="#onBorderLeftPressed" prefWidth="5.0" />
+            <Pane fx:id="border7" onMousePressed="#onBorderLeftPressed" onMouseReleased="#onBorderReleased" prefWidth="5.0" />
             <VBox fx:id="vboxMain" HBox.Hgrow="ALWAYS" HBox.hgrow="ALWAYS">
                <children>
                   <HBox prefHeight="238.0" prefWidth="790.0">
@@ -152,7 +152,7 @@
                                           </StackPane>
                                           <StackPane fx:id="mode_button" onMouseReleased="#btnNineReleased" HBox.hgrow="ALWAYS">
                                              <children>
-                                                <Text onMouseReleased="#btnNineReleased" strokeType="OUTSIDE" strokeWidth="0.0" text="9" />
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="9" />
                                              </children>
                                           </StackPane>
                                        </children>
@@ -225,15 +225,16 @@
                         </HBox>
                      </children>
                   </VBox>
-               </children></VBox>
-            <Pane fx:id="border8" onMousePressed="#onBorderRightPressed" prefWidth="5.0" />
+               </children>
+            </VBox>
+            <Pane fx:id="border8" onMousePressed="#onBorderRightPressed" onMouseReleased="#onBorderReleased" prefWidth="5.0" />
          </children>
       </HBox>
       <HBox prefHeight="5.0">
          <children>
-            <Pane fx:id="border9" onMousePressed="#onBorderBottomLeftPressed" prefHeight="5.0" prefWidth="10.0" />
-            <Pane fx:id="border10" onMousePressed="#onBorderBottomPressed" HBox.Hgrow="ALWAYS" />
-            <Pane fx:id="border11" onMousePressed="#onBorderBottomRightPressed" prefHeight="5.0" prefWidth="10.0" />
+            <Pane fx:id="border9" onMousePressed="#onBorderBottomLeftPressed" onMouseReleased="#onBorderReleased" prefHeight="5.0" prefWidth="10.0" />
+            <Pane fx:id="border10" onMousePressed="#onBorderBottomPressed" onMouseReleased="#onBorderReleased" HBox.Hgrow="ALWAYS" />
+            <Pane fx:id="border11" onMousePressed="#onBorderBottomRightPressed" onMouseReleased="#onBorderReleased" prefHeight="5.0" prefWidth="10.0" />
          </children>
       </HBox>
    </children>

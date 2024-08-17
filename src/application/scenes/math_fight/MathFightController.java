@@ -135,7 +135,7 @@ public class MathFightController {
 	private void onBorderReleased(MouseEvent event) {
 		Node source = (Node) event.getSource();
 		Parent parent = source.getParent();
-		
+		System.out.println("out");
 		parent.setOnMousePressed(null);
 		parent.setOnMouseDragged(null);
 	}

@@ -484,7 +484,7 @@ public class SPGController {
 	public void onMouseReleasedFromTitle(MouseEvent event) {
 		Node source = (Node) event.getSource();
 		Parent parent = source.getParent();
-			
+		System.out.println("test2");
 		parent.setOnMousePressed(null);
 		parent.setOnMouseDragged(null);
 	}
@@ -500,7 +500,7 @@ public class SPGController {
 	private void onBorderReleased(MouseEvent event) {
 		Node source = (Node) event.getSource();
 		Parent parent = source.getParent();
-		
+		System.out.println("test2");
 		parent.setOnMousePressed(null);
 		parent.setOnMouseDragged(null);
 	}
