@@ -132,6 +132,11 @@
                                     <Text strokeType="OUTSIDE" strokeWidth="0.0" text="-" />
                                  </children>
                               </StackPane>
+                              <StackPane fx:id="mode_button1" onMouseReleased="#btnSubReleased" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="del" />
+                                 </children>
+                              </StackPane>
                            </children>
                         </HBox>
                         <HBox alignment="CENTER" VBox.vgrow="ALWAYS">
