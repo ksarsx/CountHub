@@ -51,6 +51,29 @@ public class SPGController {
 	}
 	
 	
+	@FXML
+	private void btnDelReleased(MouseEvent event) {
+		System.out.println("text");
+		Node source = (Node) event.getSource();
+		Scene scene = source.getScene();
+		String focus = scene.getFocusOwner().getId();
+		
+		String text = "";
+		switch (focus) {
+		case "draftArea":
+			text = draftArea.getText();
+			
+			draftArea.setText(text);
+			break;
+		case "answerField":
+			text = answerField.getText();
+			text += "/";
+			answerField.setText(text);
+			break;
+			
+		}
+	}
+	
 	
 	
 	@FXML
