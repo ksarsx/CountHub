@@ -3,6 +3,7 @@ package application.scenes.solo_play;
 import java.awt.GraphicsEnvironment;
 import java.io.IOException;
 
+import application.lib.StringSettings;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -62,13 +63,11 @@ public class SPGController {
 		switch (focus) {
 		case "draftArea":
 			text = draftArea.getText();
-			
-			draftArea.setText(text);
+			draftArea.setText(StringSettings.removeLastFromText(text));
 			break;
 		case "answerField":
 			text = answerField.getText();
-			text += "/";
-			answerField.setText(text);
+			answerField.setText(StringSettings.removeLastFromText(text));
 			break;
 			
 		}
