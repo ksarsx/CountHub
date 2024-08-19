@@ -36,11 +36,15 @@ public class SPGController {
 	private Text equation;
 	
 	
+	
+	
 	@FXML
     public void initialize() {
 		draftArea.setOnKeyPressed(this::handleKeyForDraft);
 		answerField.setOnKeyPressed(this::handleKeyForAnswer);
+		System.out.println(SoloPlayModeHandler.mode + "SPG");
 		setEquationText();
+		
 		
     }
 	
@@ -58,10 +62,14 @@ public class SPGController {
 		}
 	}
 	
+	private int lastNum1 = 0;
+	private int lastNum2 = 0;
+	
 	private void setEquationText() {
 		switch (SoloPlayModeHandler.mode) {
 			case "+":
-				equation.setText("12");
+				String[] arr = StringSettings.generate_equation(1, 100, 1, 100, "+", lastNum1, lastNum2);
+				equation.setText(arr[0]);
 				
 		}
 	}

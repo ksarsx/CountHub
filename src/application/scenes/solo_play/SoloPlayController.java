@@ -404,11 +404,10 @@ public class SoloPlayController {
 	@FXML
 	private void onMode1Released(MouseEvent event) throws IOException {
 		
-		
+		SoloPlayModeHandler.mode = "+";
 		FXMLLoader loader = new FXMLLoader(getClass().getResource("/application/scenes/solo_play/SPG.fxml"));
 		Parent root = loader.load();
 		
-		SoloPlayModeHandler.mode = "+";
 		
 		Node source = (Node) event.getSource();
 		Stage stage = (Stage) source.getScene().getWindow();

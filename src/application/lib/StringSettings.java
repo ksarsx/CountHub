@@ -54,6 +54,6 @@ public class StringSettings {
 
         String[] arr = {String.valueOf(num1) + " " + typeOfOperation + " " +  String.valueOf(num2), String.valueOf(result), String.valueOf(num1), String.valueOf(num2)};
         return arr;
-    }
+    } // equation, resuls, num1, num2
 	
 }
