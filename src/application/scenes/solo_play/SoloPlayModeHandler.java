@@ -4,5 +4,5 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 
 public class SoloPlayModeHandler {
-	public static Scene scene;
+	public static String mode = "";
 }

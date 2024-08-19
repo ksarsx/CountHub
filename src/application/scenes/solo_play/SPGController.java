@@ -17,7 +17,9 @@ import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.VBox;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
+
 
 public class SPGController {
 	
@@ -30,11 +32,15 @@ public class SPGController {
 	@FXML 
 	private TextField answerField;
 	
+	@FXML
+	private Text equation;
+	
 	
 	@FXML
     public void initialize() {
 		draftArea.setOnKeyPressed(this::handleKeyForDraft);
 		answerField.setOnKeyPressed(this::handleKeyForAnswer);
+		
     }
 	
 	private void handleKeyForDraft(KeyEvent event) {
@@ -51,6 +57,17 @@ public class SPGController {
 		}
 	}
 	
+	private void setEquationText() {
+		switch (SoloPlayModeHandler.mode) {
+			case "":
+				equation.setText("12");
+				System.out.print("eeee");
+		}
+	}
+	
+	/*
+	 * start buttons
+	 */
 	
 	@FXML
 	private void btnDelReleased(MouseEvent event) {
@@ -397,7 +414,9 @@ public class SPGController {
 		}
 	}
 	
-	
+	/*
+	 * finish of buttons
+	 */
 	
 	
 	/*
@@ -773,9 +792,6 @@ public class SPGController {
 	/*
 	 * finish of drag borders
 	 */
-	
-	
-	
 	
 	@FXML
 	private void btnBackReleased(MouseEvent event) throws IOException {
