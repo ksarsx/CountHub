@@ -25,11 +25,15 @@ public class StringSettings {
         Random rand = new Random();
         int num1 = rand.nextInt(originFirstNum, boundFirstNum);
         int num2 = rand.nextInt(originSecondNum, boundSecondNum);
-        while ((num1 == lastNumber1) || (num2 == lastNumber2)) {
+        while ((num1 == lastNumber1) || (num2 == lastNumber2) || (typeOfOperation == "/") && (((double) (num1 / num2) != ((double) num1 / (double) num2)) || (num1 == num2) || (num2 == 1.0))) {
             if (num1 == lastNumber1) {
                 num1 = rand.nextInt(originFirstNum, boundFirstNum);
             }
             if (num2 == lastNumber2) {
+                num2 = rand.nextInt(originSecondNum, boundSecondNum);
+            }
+            if ((typeOfOperation == "/") && (((double) (num1 / num2) != ((double) num1 / (double) num2)) || (num1 == num2) || (num2 == 1.0))) {
+                num1 = rand.nextInt(originFirstNum, boundFirstNum);
                 num2 = rand.nextInt(originSecondNum, boundSecondNum);
             }
         }
@@ -47,6 +51,10 @@ public class StringSettings {
             case "/":
                 result = (double) num1 / (double) num2;
         }
+
+        String[] arr = {String.valueOf(num1) + " " + typeOfOperation + " " +  String.valueOf(num2), String.valueOf(result)};
+        return arr;
+    }
 
         String[] arr = {String.valueOf(num1) + " " + typeOfOperation + " " +  String.valueOf(num2), String.valueOf(result)};
         return arr;
