@@ -40,6 +40,7 @@ public class SPGController {
     public void initialize() {
 		draftArea.setOnKeyPressed(this::handleKeyForDraft);
 		answerField.setOnKeyPressed(this::handleKeyForAnswer);
+		setEquationText();
 		
     }
 	
@@ -59,9 +60,9 @@ public class SPGController {
 	
 	private void setEquationText() {
 		switch (SoloPlayModeHandler.mode) {
-			case "":
+			case "+":
 				equation.setText("12");
-				System.out.print("eeee");
+				
 		}
 	}
 	

@@ -408,6 +408,8 @@ public class SoloPlayController {
 		FXMLLoader loader = new FXMLLoader(getClass().getResource("/application/scenes/solo_play/SPG.fxml"));
 		Parent root = loader.load();
 		
+		SoloPlayModeHandler.mode = "+";
+		
 		Node source = (Node) event.getSource();
 		Stage stage = (Stage) source.getScene().getWindow();
 		Scene scene = new Scene(root, stage.getWidth(), stage.getHeight());
@@ -428,7 +430,7 @@ public class SoloPlayController {
 		Node source = (Node) event.getSource();
 		Stage stage = (Stage) source.getScene().getWindow();
 		Scene scene = new Scene(root, stage.getWidth(), stage.getHeight());
-		SoloPlayModeHandler.scene = scene; 
+		SoloPlayModeHandler.mode = "+"; 
 		scene.getStylesheets().add(getClass().getResource("/application/application.css").toExternalForm());
 		stage.setScene(scene);
 		stage.show();
