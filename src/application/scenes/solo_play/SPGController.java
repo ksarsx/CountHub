@@ -94,7 +94,11 @@ public class SPGController {
 				text = "False, true is " + result;
 			}
 			showToast((Stage) source.getScene().getWindow(), text);
-			
+			String[] arr = StringSettings.generate_equation(1, 100, 1, 100, "+", lastNum1, lastNum2);
+			lastNum1 = Integer.parseInt(arr[2]);
+			lastNum1 = Integer.parseInt(arr[3]);
+			result = Double.parseDouble(arr[1]);
+			equation.setText(arr[0]);
 		}
 	}
 	
@@ -439,7 +443,21 @@ public class SPGController {
 	}
 	@FXML
 	private void btnEnterReleased(MouseEvent event) {
-		System.out.println("text");
+		Node source = (Node) event.getSource();
+		String text = answerField.getText();
+		double answer = Double.parseDouble(text);
+		if (answer == result) {
+			text = "True";
+		}
+		else {
+			text = "False, true is " + result;
+		}
+		showToast((Stage) source.getScene().getWindow(), text);
+		String[] arr = StringSettings.generate_equation(1, 100, 1, 100, "+", lastNum1, lastNum2);
+		lastNum1 = Integer.parseInt(arr[2]);
+		lastNum1 = Integer.parseInt(arr[3]);
+		result = Double.parseDouble(arr[1]);
+		equation.setText(arr[0]);
 	}
 	@FXML
 	private void btnDotReleased(MouseEvent event) {
