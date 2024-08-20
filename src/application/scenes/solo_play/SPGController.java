@@ -4,6 +4,7 @@ import java.awt.GraphicsEnvironment;
 import java.io.IOException;
 
 import application.lib.StringSettings;
+import javafx.animation.PauseTransition;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -11,6 +12,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.input.KeyCode;
@@ -18,7 +20,9 @@ import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
+import javafx.stage.Popup;
 import javafx.stage.Stage;
+import javafx.util.Duration;
 
 
 public class SPGController {
@@ -48,11 +52,30 @@ public class SPGController {
 		
     }
 	
+	public void showToast(Stage ownerStage, String message) {
+        Popup popup = new Popup();
+        popup.setAutoFix(true);
+        popup.setAutoHide(true);
+        popup.setHideOnEscape(true);
+        
+        Label label = new Label(message);
+        label.setStyle("-fx-background-color: #776544; -fx-text-fill: #ffdfa3; -fx-padding: 15px;");
+        
+        popup.getContent().add(label);
+        
+        popup.show(ownerStage);
+        
+        PauseTransition delay = new PauseTransition(Duration.seconds(2));
+        delay.setOnFinished(event -> popup.hide());
+        delay.play();
+    }
+	
 	private void handleKeyForDraft(KeyEvent event) {
 		if (event.isAltDown() && (event.getCode() == KeyCode.E)) {
 			System.out.println("alt + E");
 			answerField.requestFocus();
 		}
+		
 	}
 	
 	private void handleKeyForAnswer(KeyEvent event) {
@@ -60,15 +83,32 @@ public class SPGController {
 			System.out.println("alt + Q");
 			draftArea.requestFocus();
 		}
+		if (event.getCode() == KeyCode.ENTER) {
+			Node source = (Node) event.getSource();
+			String text = answerField.getText();
+			double answer = Double.parseDouble(text);
+			if (answer == result) {
+				text = "True";
+			}
+			else {
+				text = "False, true is " + result;
+			}
+			showToast((Stage) source.getScene().getWindow(), text);
+			
+		}
 	}
 	
 	private int lastNum1 = 0;
 	private int lastNum2 = 0;
+	private double result = 0;
 	
 	private void setEquationText() {
 		switch (SoloPlayModeHandler.mode) {
 			case "+":
 				String[] arr = StringSettings.generate_equation(1, 100, 1, 100, "+", lastNum1, lastNum2);
+				lastNum1 = Integer.parseInt(arr[2]);
+				lastNum1 = Integer.parseInt(arr[3]);
+				result = Double.parseDouble(arr[1]);
 				equation.setText(arr[0]);
 				
 		}
