@@ -18,6 +18,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
 import javafx.stage.Popup;
@@ -39,7 +40,8 @@ public class SPGController {
 	@FXML
 	private Text equation;
 	
-	
+	@FXML
+	private StackPane titleLocation;
 	
 	
 	@FXML
@@ -52,7 +54,7 @@ public class SPGController {
 		
     }
 	
-	public void showToast(Stage ownerStage, String message) {
+	public void showToast(Stage ownerStage, String message, double x, double y) {
         Popup popup = new Popup();
         popup.setAutoFix(true);
         popup.setAutoHide(true);
@@ -62,6 +64,9 @@ public class SPGController {
         label.setStyle("-fx-background-color: #776544; -fx-text-fill: #ffdfa3; -fx-padding: 15px;");
         
         popup.getContent().add(label);
+        
+        popup.setX(x);
+        popup.setY(y);
         
         popup.show(ownerStage);
         
@@ -85,6 +90,7 @@ public class SPGController {
 		}
 		if (event.getCode() == KeyCode.ENTER) {
 			Node source = (Node) event.getSource();
+			Stage stage = (Stage) source.getScene().getWindow();
 			String text = answerField.getText();
 			double answer = Double.parseDouble(text);
 			if (answer == result) {
@@ -93,7 +99,8 @@ public class SPGController {
 			else {
 				text = "False, true is " + result;
 			}
-			showToast((Stage) source.getScene().getWindow(), text);
+			
+			showToast((Stage) source.getScene().getWindow(), text, stage.getX() + 275, stage.getY() + 25);
 			String[] arr = StringSettings.generate_equation(1, 100, 1, 100, "+", lastNum1, lastNum2);
 			lastNum1 = Integer.parseInt(arr[2]);
 			lastNum1 = Integer.parseInt(arr[3]);
@@ -444,6 +451,7 @@ public class SPGController {
 	@FXML
 	private void btnEnterReleased(MouseEvent event) {
 		Node source = (Node) event.getSource();
+		Stage stage = (Stage) source.getScene().getWindow();
 		String text = answerField.getText();
 		double answer = Double.parseDouble(text);
 		if (answer == result) {
@@ -452,7 +460,7 @@ public class SPGController {
 		else {
 			text = "False, true is " + result;
 		}
-		showToast((Stage) source.getScene().getWindow(), text);
+		showToast((Stage) source.getScene().getWindow(), text, stage.getX() + 275, stage.getY() + 25);
 		String[] arr = StringSettings.generate_equation(1, 100, 1, 100, "+", lastNum1, lastNum2);
 		lastNum1 = Integer.parseInt(arr[2]);
 		lastNum1 = Integer.parseInt(arr[3]);

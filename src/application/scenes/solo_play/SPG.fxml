@@ -99,7 +99,7 @@
                         <TextArea fx:id="draftArea" prefWidth="270.0" />
                         <VBox HBox.hgrow="ALWAYS">
                            <children>
-                              <StackPane VBox.vgrow="ALWAYS">
+                              <StackPane fx:id="titleLocation" VBox.vgrow="ALWAYS">
                                  <children>
                                     <Text fx:id="equation" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER">
                                        <font>
