@@ -89,11 +89,11 @@
       <HBox VBox.Vgrow="ALWAYS">
          <children>
             <Pane fx:id="border7" onMousePressed="#onBorderLeftPressed" onMouseReleased="#onBorderReleased" prefWidth="5.0" />
-            <HBox HBox.hgrow="ALWAYS">
+            <HBox fx:id="vbx1" HBox.hgrow="ALWAYS">
                <children>
                   <ScrollPane>
                      <content>
-                        <VBox alignment="TOP_RIGHT" prefHeight="695.0" prefWidth="360.0">
+                        <VBox fx:id="vbx1" alignment="TOP_RIGHT" prefHeight="695.0" prefWidth="360.0">
                            <children>
                               <StackPane fx:id="mode_button" onMouseReleased="#onMode1Released" prefHeight="83.0" prefWidth="360.0">
                                  <children>
