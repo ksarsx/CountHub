@@ -173,4 +173,34 @@
 	-fx-border-color: #ffdfa3;
     -fx-border-width: 4px;
 }
+.scroll-pane .scroll-bar:vertical .thumb {
+    -fx-background-color: #776544; /* Цвет вертикального ползунка */
+    -fx-background-radius: 5; /* Закругленные края ползунка */
+}
 
+.scroll-pane .scroll-bar:horizontal .thumb {
+    -fx-background-color: #776544; /* Цвет горизонтального ползунка */
+    -fx-background-radius: 5; /* Закругленные края ползунка */
+}
+.scroll-pane .scroll-bar:vertical .track {
+    -fx-background-color: #ffdfa3; /* Цвет вертикального трека */
+    -fx-background-radius: 5; /* Закругленные края трека */
+}
+
+.scroll-pane .scroll-bar:horizontal .track {
+    -fx-background-color: #ffdfa3; /* Цвет горизонтального трека */
+    -fx-background-radius: 5; /* Закругленные края трека */
+}
+.scroll-pane .scroll-bar .increment-button, 
+.scroll-pane .scroll-bar .decrement-button {
+    -fx-background-color: #ffdfa3; /* Цвет кнопок (если они есть) */
+}
+.scroll-pane .scroll-bar:vertical .increment-arrow,
+.scroll-pane .scroll-bar:vertical .decrement-arrow {
+    -fx-background-color: #b0bec5; /* Цвет кнопок прокрутки (вверх/вниз) */
+}
+
+.scroll-pane .scroll-bar:horizontal .increment-arrow,
+.scroll-pane .scroll-bar:horizontal .decrement-arrow {
+    -fx-background-color: #b0bec5; /* Цвет кнопок прокрутки (влево/вправо) */
+}

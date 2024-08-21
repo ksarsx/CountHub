@@ -91,46 +91,46 @@
             <Pane fx:id="border7" onMousePressed="#onBorderLeftPressed" onMouseReleased="#onBorderReleased" prefWidth="5.0" />
             <HBox HBox.hgrow="ALWAYS">
                <children>
-                  <ScrollPane prefHeight="570.0" prefWidth="376.0">
+                  <ScrollPane>
                      <content>
                         <VBox alignment="TOP_RIGHT" prefHeight="695.0" prefWidth="360.0">
                            <children>
-                              <StackPane onMouseReleased="#onMode1Released" prefHeight="83.0" prefWidth="360.0">
+                              <StackPane fx:id="mode_button" onMouseReleased="#onMode1Released" prefHeight="83.0" prefWidth="360.0">
                                  <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Двузначные с двузначными" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="(сложение) Двузначные с двузначными" />
                                  </children>
                               </StackPane>
-                              <StackPane layoutX="10.0" layoutY="10.0" onMouseReleased="#onMode2Released" prefHeight="83.0" prefWidth="360.0">
+                              <StackPane fx:id="mode_button" layoutX="10.0" layoutY="10.0" onMouseReleased="#onMode2Released" prefHeight="83.0" prefWidth="360.0">
                                  <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="(сложение) Двузначные с трехзначными" />
                                  </children>
                               </StackPane>
-                              <StackPane layoutX="10.0" layoutY="93.0" prefHeight="83.0" prefWidth="360.0">
+                              <StackPane fx:id="mode_button" layoutX="10.0" layoutY="93.0" prefHeight="83.0" prefWidth="360.0">
                                  <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="(сложение) Двузначные с четырёхзначными" />
                                  </children>
                               </StackPane>
-                              <StackPane layoutX="10.0" layoutY="176.0" prefHeight="83.0" prefWidth="360.0">
-                                 <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
-                                 </children>
-                              </StackPane>
-                              <StackPane layoutX="10.0" layoutY="10.0" prefHeight="83.0" prefWidth="360.0">
+                              <StackPane fx:id="mode_button" layoutX="10.0" layoutY="176.0" prefHeight="83.0" prefWidth="360.0">
                                  <children>
                                     <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
                                  </children>
                               </StackPane>
-                              <StackPane layoutX="10.0" layoutY="93.0" prefHeight="83.0" prefWidth="360.0">
+                              <StackPane fx:id="mode_button" layoutX="10.0" layoutY="10.0" prefHeight="83.0" prefWidth="360.0">
                                  <children>
                                     <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
                                  </children>
                               </StackPane>
-                              <StackPane layoutX="10.0" layoutY="176.0" prefHeight="83.0" prefWidth="360.0">
+                              <StackPane fx:id="mode_button" layoutX="10.0" layoutY="93.0" prefHeight="83.0" prefWidth="360.0">
                                  <children>
                                     <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
                                  </children>
                               </StackPane>
-                              <StackPane layoutX="10.0" layoutY="259.0" prefHeight="83.0" prefWidth="360.0">
+                              <StackPane fx:id="mode_button" layoutX="10.0" layoutY="176.0" prefHeight="83.0" prefWidth="360.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                 </children>
+                              </StackPane>
+                              <StackPane fx:id="mode_button" layoutX="10.0" layoutY="259.0" prefHeight="83.0" prefWidth="360.0">
                                  <children>
                                     <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
                                  </children>
