@@ -115,12 +115,17 @@ public class SPGController {
 	
 	private void setEquationText() {
 		switch (SoloPlayModeHandler.mode) {
-			case "+":
+			case "m1":
 				String[] arr = StringSettings.generate_equation(1, 100, 1, 100, "+", lastNum1, lastNum2);
 				lastNum1 = Integer.parseInt(arr[2]);
 				lastNum1 = Integer.parseInt(arr[3]);
 				result = Double.parseDouble(arr[1]);
 				equation.setText(arr[0]);
+			case "m2":
+				String[] arr1 = StringSettings.generate_equation(1, 100, 100, 1000, "+", lastNum1, lastNum2);
+				lastNum1 = Integer.parseInt(arr1[2]);
+				lastNum1 = Integer.parseInt(arr1[3]);
+				result = Double.parseDouble(arr1[1]);
 				
 		}
 	}

@@ -404,7 +404,7 @@ public class SoloPlayController {
 	@FXML
 	private void onMode1Released(MouseEvent event) throws IOException {
 		
-		SoloPlayModeHandler.mode = "+";
+		SoloPlayModeHandler.mode = "m1";
 		FXMLLoader loader = new FXMLLoader(getClass().getResource("/application/scenes/solo_play/SPG.fxml"));
 		Parent root = loader.load();
 		
@@ -420,7 +420,7 @@ public class SoloPlayController {
 	@FXML
 	private void onMode2Released(MouseEvent event) throws IOException {
 		
-		
+		SoloPlayModeHandler.mode = "m2";
 		FXMLLoader loader = new FXMLLoader(getClass().getResource("/application/scenes/solo_play/SPG.fxml"));
 		Parent root = loader.load();
 		
