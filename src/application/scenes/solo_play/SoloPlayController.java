@@ -425,11 +425,9 @@ public class SoloPlayController {
 		Parent root = loader.load();
 		
 		
-		
 		Node source = (Node) event.getSource();
 		Stage stage = (Stage) source.getScene().getWindow();
 		Scene scene = new Scene(root, stage.getWidth(), stage.getHeight());
-		SoloPlayModeHandler.mode = "+"; 
 		scene.getStylesheets().add(getClass().getResource("/application/application.css").toExternalForm());
 		stage.setScene(scene);
 		stage.show();
